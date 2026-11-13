@@ -1,0 +1,281 @@
+{
+ "protocol_id": "banking77-frontier-expansion-20261013",
+ "prompt_sha256": "92c32fa2577439293878987c224763b1bb5a6198f888a27bf4391c1ad5cc2c17",
+ "retrieval": "none",
+ "timing_protocol": "adaptive-cumulative-http-attempt-time-v1",
+ "ranking_policy_id": "banking77-weighted-comparison-v1",
+ "incumbent_arm_id": "incumbent-o4",
+ "intent_labels": [
+  "compromised_card",
+  "lost_or_stolen_card",
+  "lost_or_stolen_phone",
+  "card_payment_not_recognised",
+  "cash_withdrawal_not_recognised",
+  "direct_debit_payment_not_recognised",
+  "transaction_charged_twice",
+  "extra_charge_on_statement",
+  "Refund_not_showing_up",
+  "request_refund",
+  "reverted_card_payment?",
+  "wrong_amount_of_cash_received",
+  "activate_my_card",
+  "card_about_to_expire",
+  "card_arrival",
+  "card_delivery_estimate",
+  "card_linking",
+  "get_physical_card",
+  "getting_spare_card",
+  "order_physical_card",
+  "get_disposable_virtual_card",
+  "getting_virtual_card",
+  "disposable_card_limits",
+  "visa_or_mastercard",
+  "supported_cards_and_currencies",
+  "card_acceptance",
+  "card_not_working",
+  "card_swallowed",
+  "contactless_not_working",
+  "virtual_card_not_working",
+  "declined_card_payment",
+  "pending_card_payment",
+  "apple_pay_or_google_pay",
+  "change_pin",
+  "pin_blocked",
+  "atm_support",
+  "declined_cash_withdrawal",
+  "pending_cash_withdrawal",
+  "cash_withdrawal_charge",
+  "beneficiary_not_allowed",
+  "cancel_transfer",
+  "declined_transfer",
+  "failed_transfer",
+  "pending_transfer",
+  "transfer_into_account",
+  "transfer_not_received_by_recipient",
+  "transfer_timing",
+  "receiving_money",
+  "balance_not_updated_after_bank_transfer",
+  "transfer_fee_charged",
+  "automatic_top_up",
+  "pending_top_up",
+  "top_up_by_bank_transfer_charge",
+  "top_up_by_card_charge",
+  "top_up_by_cash_or_cheque",
+  "top_up_failed",
+  "top_up_limits",
+  "top_up_reverted",
+  "topping_up_by_card",
+  "verify_top_up",
+  "balance_not_updated_after_cheque_or_cash_deposit",
+  "exchange_charge",
+  "exchange_rate",
+  "exchange_via_app",
+  "card_payment_wrong_exchange_rate",
+  "wrong_exchange_rate_for_cash_withdrawal",
+  "card_payment_fee_charged",
+  "fiat_currency_support",
+  "age_limit",
+  "country_support",
+  "edit_personal_details",
+  "passcode_forgotten",
+  "terminate_account",
+  "unable_to_verify_identity",
+  "verify_my_identity",
+  "verify_source_of_funds",
+  "why_verify_identity"
+ ],
+ "configurations": [
+  {
+   "id": "incumbent-o4",
+   "model": "openai/o4-mini",
+   "provider": "openai",
+   "reasoning": {
+    "enabled": true
+   },
+   "max_tokens": 2048,
+   "retry_max_tokens": 4096,
+   "configuration_sha256": "bd4a4701b671062224cbb261f4a3dfde20de5839bef024174ad45e292ba69d42",
+   "evidence_origin": "retained_history",
+   "collection_window": {
+    "first": "2026-10-13T01:45:24.835240+00:00",
+    "last": "2026-10-13T06:29:05.506119+00:00"
+   }
+  },
+  {
+   "id": "deepseek",
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "provider": "streamlake/fp8",
+   "reasoning": {
+    "effort": "low"
+   },
+   "max_tokens": 8192,
+   "retry_max_tokens": 16384,
+   "configuration_sha256": "cfc691eb10c1da0e83d293f3b0708d9bcfef60679e909f0b2a129bdc16096252",
+   "evidence_origin": "retained_history",
+   "collection_window": {
+    "first": "2026-10-13T01:45:24.835240+00:00",
+    "last": "2026-10-13T06:29:05.506119+00:00"
+   }
+  },
+  {
+   "id": "qwen",
+   "model": "qwen/qwen3.7-flash",
+   "provider": "alibaba/us-east-1",
+   "reasoning": {
+    "max_tokens": 1024
+   },
+   "max_tokens": 2048,
+   "retry_max_tokens": 4096,
+   "configuration_sha256": "ddf7b9ef3b26defddc52ab1e09d7be88d0a5d4606fa9f05190a2fef5353a1f04",
+   "evidence_origin": "retained_history",
+   "collection_window": {
+    "first": "2026-10-13T01:45:24.835240+00:00",
+    "last": "2026-10-13T06:29:05.506119+00:00"
+   }
+  },
+  {
+   "id": "nemotron",
+   "model": "nvidia/nemotron-3.5-lightning",
+   "provider": "deepinfra/bf16",
+   "reasoning": {
+    "enabled": true
+   },
+   "max_tokens": 8192,
+   "retry_max_tokens": 16384,
+   "configuration_sha256": "efc0ed3d282863324c18c2d0e60cf477de96ebd0b4b981d56b100e17c548aff7",
+   "evidence_origin": "retained_history",
+   "collection_window": {
+    "first": "2026-10-13T01:45:24.835240+00:00",
+    "last": "2026-10-13T06:29:05.506119+00:00"
+   }
+  },
+  {
+   "id": "glm",
+   "model": "z-ai/glm-5.3-flash",
+   "provider": "z-ai/fp8",
+   "reasoning": {
+    "effort": "low"
+   },
+   "max_tokens": 2048,
+   "retry_max_tokens": 4096,
+   "configuration_sha256": "83331aff5c4a888f95ae2ab98de2b7810197abdd5e237e506d324ab9a1e87b3e",
+   "evidence_origin": "retained_history",
+   "collection_window": {
+    "first": "2026-10-13T01:45:24.835240+00:00",
+    "last": "2026-10-13T06:29:05.506119+00:00"
+   }
+  },
+  {
+   "id": "gemini-flash-lite",
+   "model": "google/gemini-3.5-flash-lite",
+   "provider": "google-ai-studio",
+   "reasoning": {
+    "effort": "low"
+   },
+   "max_tokens": 2048,
+   "retry_max_tokens": 4096,
+   "configuration_sha256": "6c50851ef2446b2d90c39d3ba27dabf06fd0f5cccfae9f5ba3ca18cb24b0cbc0",
+   "evidence_origin": "new_extension",
+   "collection_window": {
+    "first": "2026-10-13T16:22:28.628360+00:00",
+    "last": "2026-10-13T19:11:44.264209+00:00"
+   }
+  },
+  {
+   "id": "gemini-flash",
+   "model": "google/gemini-3.8-flash",
+   "provider": "google-ai-studio",
+   "reasoning": {
+    "effort": "low"
+   },
+   "max_tokens": 2048,
+   "retry_max_tokens": 4096,
+   "configuration_sha256": "2c089f4cdf33aeb4d0992a8f6cec2e100924cfa727645d3e56f3bda33b311245",
+   "evidence_origin": "new_extension",
+   "collection_window": {
+    "first": "2026-10-13T16:22:29.840950+00:00",
+    "last": "2026-10-13T19:11:46.230353+00:00"
+   }
+  },
+  {
+   "id": "gpt-luna",
+   "model": "openai/gpt-6-luna",
+   "provider": "openai",
+   "reasoning": {
+    "effort": "low"
+   },
+   "max_tokens": 2048,
+   "retry_max_tokens": 4096,
+   "configuration_sha256": "52083b392e06aaf9053bd71f7ff93aa4a8279e04123ea9b15bb85b113f6e23f5",
+   "evidence_origin": "new_extension",
+   "collection_window": {
+    "first": "2026-10-13T16:22:31.126511+00:00",
+    "last": "2026-10-13T19:11:47.172082+00:00"
+   }
+  },
+  {
+   "id": "gpt-sol",
+   "model": "openai/gpt-6.1-sol",
+   "provider": "openai",
+   "reasoning": {
+    "effort": "low"
+   },
+   "max_tokens": 2048,
+   "retry_max_tokens": 4096,
+   "configuration_sha256": "6364cc3a84d9b385567b8e5c2b842bd063792131f0e23e16e4ea4ae280a05a6e",
+   "evidence_origin": "new_extension",
+   "collection_window": {
+    "first": "2026-10-13T16:22:33.781777+00:00",
+    "last": "2026-10-13T19:11:49.317240+00:00"
+   }
+  },
+  {
+   "id": "claude-haiku",
+   "model": "anthropic/claude-haiku-5.5",
+   "provider": "anthropic",
+   "reasoning": {
+    "effort": "low"
+   },
+   "max_tokens": 2048,
+   "retry_max_tokens": 4096,
+   "configuration_sha256": "44eb4cb71f760935e501634746ba1b1c086c94fba19e233f2e6ebd5e972a3c87",
+   "evidence_origin": "new_extension",
+   "collection_window": {
+    "first": "2026-10-13T16:22:36.166302+00:00",
+    "last": "2026-10-13T19:11:37.461764+00:00"
+   }
+  },
+  {
+   "id": "claude-sonnet",
+   "model": "anthropic/claude-sonnet-5.5",
+   "provider": "anthropic",
+   "reasoning": {
+    "effort": "low"
+   },
+   "max_tokens": 2048,
+   "retry_max_tokens": 4096,
+   "configuration_sha256": "7b331a63d73ef3e6ce10bbc4fceae74963bb72d9ae78585a5728da35eb783e98",
+   "evidence_origin": "new_extension",
+   "collection_window": {
+    "first": "2026-10-13T16:22:37.117881+00:00",
+    "last": "2026-10-13T19:11:39.109406+00:00"
+   }
+  },
+  {
+   "id": "grok",
+   "model": "x-ai/grok-4.7",
+   "provider": "xai",
+   "reasoning": {
+    "effort": "low"
+   },
+   "max_tokens": 2048,
+   "retry_max_tokens": 4096,
+   "configuration_sha256": "0beb9ce31f5af999d8df1d1507c328a0d95ad102ce55dd81551520772fe8c6c2",
+   "evidence_origin": "new_extension",
+   "collection_window": {
+    "first": "2026-10-13T16:22:40.012924+00:00",
+    "last": "2026-10-13T19:11:43.697441+00:00"
+   }
+  }
+ ]
+}

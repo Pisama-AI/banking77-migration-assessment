@@ -1,0 +1,2239 @@
+{
+  "version": "pisama-banking77-case-examples-v2",
+  "source_summary_sha256": "3b41e33295c60f5b80807797c9446aed1ff644c022af72442246dbcb770f91ca",
+  "source_dataset": {
+    "name": "Banking77",
+    "revision": "sha256:d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d",
+    "split": "test",
+    "sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d",
+    "source_url": "https://github.com/PolyAI-LDN/task-specific-datasets/tree/master/banking_data",
+    "license_url": "https://github.com/PolyAI-LDN/task-specific-datasets/blob/master/LICENSE"
+  },
+  "selection": {
+    "phase": "primary",
+    "rule": "lowest_numeric_case_id_per_candidate_and_category",
+    "illustrative_only": true,
+    "excludes": [
+      "invalid_outputs",
+      "provider_errors",
+      "unresolved_outputs",
+      "challenge_cases"
+    ],
+    "match_definition": "exact_parsed_intent_label",
+    "csv_text_policy": "Formula-like cells are prefixed with an apostrophe; JSON preserves exact visible text."
+  },
+  "candidates": [
+    {
+      "arm_id": "deepseek",
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "name": "DeepSeek V4 Flash",
+      "planned": 500,
+      "valid_pairs": 498,
+      "excluded_pairs": 2,
+      "categories": {
+        "both_correct": 354,
+        "shared_wrong": 83,
+        "correction": 20,
+        "regression": 20,
+        "different_wrong": 21
+      }
+    },
+    {
+      "arm_id": "qwen",
+      "model": "qwen/qwen3.7-flash",
+      "name": "Qwen3.7-Flash",
+      "planned": 500,
+      "valid_pairs": 499,
+      "excluded_pairs": 1,
+      "categories": {
+        "both_correct": 350,
+        "shared_wrong": 72,
+        "correction": 27,
+        "regression": 23,
+        "different_wrong": 27
+      }
+    },
+    {
+      "arm_id": "nemotron",
+      "model": "nvidia/nemotron-3.5-lightning",
+      "name": "Nemotron 3.5 Lightning",
+      "planned": 500,
+      "valid_pairs": 497,
+      "excluded_pairs": 3,
+      "categories": {
+        "both_correct": 352,
+        "shared_wrong": 67,
+        "correction": 28,
+        "regression": 21,
+        "different_wrong": 29
+      }
+    },
+    {
+      "arm_id": "glm",
+      "model": "z-ai/glm-5.3-flash",
+      "name": "GLM-5.3-Flash",
+      "planned": 500,
+      "valid_pairs": 500,
+      "excluded_pairs": 0,
+      "categories": {
+        "both_correct": 354,
+        "shared_wrong": 68,
+        "correction": 35,
+        "regression": 20,
+        "different_wrong": 23
+      }
+    },
+    {
+      "arm_id": "gemini-flash-lite",
+      "model": "google/gemini-3.5-flash-lite",
+      "name": "Gemini 3.5 Flash Lite",
+      "planned": 500,
+      "valid_pairs": 500,
+      "excluded_pairs": 0,
+      "categories": {
+        "both_correct": 355,
+        "shared_wrong": 70,
+        "correction": 28,
+        "regression": 19,
+        "different_wrong": 28
+      }
+    },
+    {
+      "arm_id": "gemini-flash",
+      "model": "google/gemini-3.8-flash",
+      "name": "Gemini 3.8 Flash",
+      "planned": 500,
+      "valid_pairs": 500,
+      "excluded_pairs": 0,
+      "categories": {
+        "both_correct": 370,
+        "shared_wrong": 50,
+        "correction": 48,
+        "regression": 4,
+        "different_wrong": 28
+      }
+    },
+    {
+      "arm_id": "gpt-luna",
+      "model": "openai/gpt-6-luna",
+      "name": "GPT-6 Luna",
+      "planned": 500,
+      "valid_pairs": 500,
+      "excluded_pairs": 0,
+      "categories": {
+        "both_correct": 362,
+        "shared_wrong": 62,
+        "correction": 43,
+        "regression": 12,
+        "different_wrong": 21
+      }
+    },
+    {
+      "arm_id": "gpt-sol",
+      "model": "openai/gpt-6.1-sol",
+      "name": "GPT-6.1 Sol",
+      "planned": 500,
+      "valid_pairs": 500,
+      "excluded_pairs": 0,
+      "categories": {
+        "both_correct": 365,
+        "shared_wrong": 52,
+        "correction": 49,
+        "regression": 9,
+        "different_wrong": 25
+      }
+    },
+    {
+      "arm_id": "claude-haiku",
+      "model": "anthropic/claude-haiku-5.5",
+      "name": "Claude Haiku 5.5",
+      "planned": 500,
+      "valid_pairs": 489,
+      "excluded_pairs": 11,
+      "categories": {
+        "both_correct": 347,
+        "shared_wrong": 62,
+        "correction": 38,
+        "regression": 22,
+        "different_wrong": 20
+      }
+    },
+    {
+      "arm_id": "claude-sonnet",
+      "model": "anthropic/claude-sonnet-5.5",
+      "name": "Claude Sonnet 5.5",
+      "planned": 500,
+      "valid_pairs": 391,
+      "excluded_pairs": 109,
+      "categories": {
+        "both_correct": 330,
+        "shared_wrong": 38,
+        "correction": 16,
+        "regression": 2,
+        "different_wrong": 5
+      }
+    },
+    {
+      "arm_id": "grok",
+      "model": "x-ai/grok-4.7",
+      "name": "Grok 4.7",
+      "planned": 500,
+      "valid_pairs": 500,
+      "excluded_pairs": 0,
+      "categories": {
+        "both_correct": 368,
+        "shared_wrong": 72,
+        "correction": 34,
+        "regression": 6,
+        "different_wrong": 20
+      }
+    }
+  ],
+  "examples": [
+    {
+      "id": "deepseek-both_correct",
+      "category": "both_correct",
+      "candidate_arm_id": "deepseek",
+      "case_id": "banking77:test:20",
+      "input": "I did not get my card yet, is it lost?",
+      "reference_intent": "card_arrival",
+      "outputs_match": true,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"card_arrival\"}",
+        "parsed_intent": "card_arrival",
+        "correct": true,
+        "provider_route": "openai",
+        "receipt_sha256": "d1bce59281a16178539697f483d695ef2a6a946022804355c749c1653e625813",
+        "request_sha256": "20592f3e61ad0adc43cc4cc2f344e98242bace1ec37a07ca7680a4bc40919e41",
+        "response_sha256": "ff0e1e664f76be0456acd932a661e0753b4eff025cf6f85f01fe682d18203379",
+        "plan_sha256": "fa28afcfde818f2234f7d94fc946db34b2d7254acca6a8fc1b9ea7a829a12c33"
+      },
+      "candidate": {
+        "model": "deepseek/deepseek-v4-flash-0731",
+        "name": "DeepSeek V4 Flash",
+        "visible_answer": "{\"intent\":\"card_arrival\"}",
+        "parsed_intent": "card_arrival",
+        "correct": true,
+        "provider_route": "streamlake/fp8",
+        "receipt_sha256": "e8060b286aa301a25e58d58445446c916e25226ea7680111ecae0e109c0ca60e",
+        "request_sha256": "bcc685731cf6774d1fd871e0babcf7587f879a2be626d4a09d03c53ab93abb3b",
+        "response_sha256": "efd6d9aaae44461f2687b6d5402178494d6b4a9419927472e8845a172ff27509",
+        "plan_sha256": "fa28afcfde818f2234f7d94fc946db34b2d7254acca6a8fc1b9ea7a829a12c33"
+      },
+      "provenance": {
+        "plan_sha256": "fc86a515c397671c38d6ed40083938075dcc30df692c771de7b660f66a25d193",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "deepseek-shared_wrong",
+      "category": "shared_wrong",
+      "candidate_arm_id": "deepseek",
+      "case_id": "banking77:test:21",
+      "input": "Status of the card I ordered.",
+      "reference_intent": "card_arrival",
+      "outputs_match": true,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"card_delivery_estimate\"}",
+        "parsed_intent": "card_delivery_estimate",
+        "correct": false,
+        "provider_route": "openai",
+        "receipt_sha256": "45294616436f78c8eaa173097c819f86e59b4e4d00135bb4a1f7f467bffa9ee8",
+        "request_sha256": "c3714dedcedd12e484da6029d079b39ccf4d28d907e6e836e61063a186465028",
+        "response_sha256": "537c01acb4a20773ed1093a9629bb5b146017b51d49691732ae33b4f3d2b46d2",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "candidate": {
+        "model": "deepseek/deepseek-v4-flash-0731",
+        "name": "DeepSeek V4 Flash",
+        "visible_answer": "{\"intent\":\"card_delivery_estimate\"}",
+        "parsed_intent": "card_delivery_estimate",
+        "correct": false,
+        "provider_route": "streamlake/fp8",
+        "receipt_sha256": "e0320f01699377ec6375eda65b332ee3ae7851d251422f3c08b196e3cfa58587",
+        "request_sha256": "e6b64d67df2ce6b60343c97fb96d2743e5d6655df6ed01a9b85c57753e42096a",
+        "response_sha256": "7f06901d1f4967c6613dd0234395adec94d5bad4bd262ace113736f0aeeca012",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "provenance": {
+        "plan_sha256": "fc86a515c397671c38d6ed40083938075dcc30df692c771de7b660f66a25d193",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "deepseek-correction",
+      "category": "correction",
+      "candidate_arm_id": "deepseek",
+      "case_id": "banking77:test:43",
+      "input": "I have received my card, can you help me put it in the app?",
+      "reference_intent": "card_linking",
+      "outputs_match": false,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"activate_my_card\"}",
+        "parsed_intent": "activate_my_card",
+        "correct": false,
+        "provider_route": "openai",
+        "receipt_sha256": "8640c8124dc6be707f8aaedce6341c1219e9d25d119ae768b215b72a6056bb05",
+        "request_sha256": "6cf7eaef41e2ea7ddbb576d0066d57e403fe5396ab4758b8e3b1c2a6145bb261",
+        "response_sha256": "fd94bb065062f047f11ef7fa8ad74ad3bf744c9b2ecd205b24807b91344b7461",
+        "plan_sha256": "fa28afcfde818f2234f7d94fc946db34b2d7254acca6a8fc1b9ea7a829a12c33"
+      },
+      "candidate": {
+        "model": "deepseek/deepseek-v4-flash-0731",
+        "name": "DeepSeek V4 Flash",
+        "visible_answer": "{\"intent\":\"card_linking\"}",
+        "parsed_intent": "card_linking",
+        "correct": true,
+        "provider_route": "streamlake/fp8",
+        "receipt_sha256": "d2c600f59d6c9e11d64c13fa028d5c3a71f78c1d99300f0f10a55aa0d9e035b2",
+        "request_sha256": "1554422bc843cacfed264891b987436f14ffcf36c341ec8605d8331f9b5f61ed",
+        "response_sha256": "c15f744c8dc25e263d6bb9ea64cae37734520d542c835e2731dbb1790491be77",
+        "plan_sha256": "fa28afcfde818f2234f7d94fc946db34b2d7254acca6a8fc1b9ea7a829a12c33"
+      },
+      "provenance": {
+        "plan_sha256": "fc86a515c397671c38d6ed40083938075dcc30df692c771de7b660f66a25d193",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "deepseek-regression",
+      "category": "regression",
+      "candidate_arm_id": "deepseek",
+      "case_id": "banking77:test:2",
+      "input": "I ordered a card but it has not arrived. Help please!",
+      "reference_intent": "card_arrival",
+      "outputs_match": false,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"card_arrival\"}",
+        "parsed_intent": "card_arrival",
+        "correct": true,
+        "provider_route": "openai",
+        "receipt_sha256": "590264eb8918169dad4ea57bb612c421d889ccee094bd11331c241b77190e028",
+        "request_sha256": "fac7bb7a024b32009fa2cf5b5274b2815ff84cbe984ea43827cc24299046989b",
+        "response_sha256": "c2d7abc7f7c7fb3abd1916ad347115c044c4fd23a29732ef7e2c6d2c05163da2",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "candidate": {
+        "model": "deepseek/deepseek-v4-flash-0731",
+        "name": "DeepSeek V4 Flash",
+        "visible_answer": "{\"intent\":\"card_delivery_estimate\"}",
+        "parsed_intent": "card_delivery_estimate",
+        "correct": false,
+        "provider_route": "streamlake/fp8",
+        "receipt_sha256": "ceec6cd457545d2fa9dcf2a41fb90c28527cd70759a12378d932aa45eddcfe10",
+        "request_sha256": "4f51ab011c8dbbc4f6cc44f06fcddaa37c51084242efda2f7440051d158d4382",
+        "response_sha256": "de15aee6f8c1a63f991fc15e6eb14c65f53e11ce9ffcaeef7d766cf864ef7f80",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "provenance": {
+        "plan_sha256": "fc86a515c397671c38d6ed40083938075dcc30df692c771de7b660f66a25d193",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "deepseek-different_wrong",
+      "category": "different_wrong",
+      "candidate_arm_id": "deepseek",
+      "case_id": "banking77:test:382",
+      "input": "I broke my card",
+      "reference_intent": "card_not_working",
+      "outputs_match": false,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"getting_spare_card\"}",
+        "parsed_intent": "getting_spare_card",
+        "correct": false,
+        "provider_route": "openai",
+        "receipt_sha256": "8759d1974ee8ba2a4cc159afd88502fb1c89936454b46445c6108e4562e114fd",
+        "request_sha256": "837d08959660607e93449ab2580e5fc25f19e59eac7e8fa6a3224d9d82517433",
+        "response_sha256": "a21d386c3aaef37383da63f6821780fda3eca5e838f8a2ae43040af497c32df6",
+        "plan_sha256": "fa28afcfde818f2234f7d94fc946db34b2d7254acca6a8fc1b9ea7a829a12c33"
+      },
+      "candidate": {
+        "model": "deepseek/deepseek-v4-flash-0731",
+        "name": "DeepSeek V4 Flash",
+        "visible_answer": "{\"intent\":\"order_physical_card\"}",
+        "parsed_intent": "order_physical_card",
+        "correct": false,
+        "provider_route": "streamlake/fp8",
+        "receipt_sha256": "993fc20ee8c7353586ea0ea60fcfa8f7ecd1d950a269672138e6c5becaacc83e",
+        "request_sha256": "21e72b9002326a30912eb6fc46dc67896753e2b73e86e4c31f2ac3c4f31e5ea8",
+        "response_sha256": "e96dbb6ecf979d1f6f570c486f0a6aa65ac5578076a560bfbe996a66c961fd68",
+        "plan_sha256": "fa28afcfde818f2234f7d94fc946db34b2d7254acca6a8fc1b9ea7a829a12c33"
+      },
+      "provenance": {
+        "plan_sha256": "fc86a515c397671c38d6ed40083938075dcc30df692c771de7b660f66a25d193",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "qwen-both_correct",
+      "category": "both_correct",
+      "candidate_arm_id": "qwen",
+      "case_id": "banking77:test:2",
+      "input": "I ordered a card but it has not arrived. Help please!",
+      "reference_intent": "card_arrival",
+      "outputs_match": true,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"card_arrival\"}",
+        "parsed_intent": "card_arrival",
+        "correct": true,
+        "provider_route": "openai",
+        "receipt_sha256": "590264eb8918169dad4ea57bb612c421d889ccee094bd11331c241b77190e028",
+        "request_sha256": "fac7bb7a024b32009fa2cf5b5274b2815ff84cbe984ea43827cc24299046989b",
+        "response_sha256": "c2d7abc7f7c7fb3abd1916ad347115c044c4fd23a29732ef7e2c6d2c05163da2",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "candidate": {
+        "model": "qwen/qwen3.7-flash",
+        "name": "Qwen3.7-Flash",
+        "visible_answer": "{\"intent\":\"card_arrival\"}",
+        "parsed_intent": "card_arrival",
+        "correct": true,
+        "provider_route": "alibaba/us-east-1",
+        "receipt_sha256": "db47507f21a8b21ca9ca8f2d7b6d80b5e609a24999c9cc47154f42b140ddd1f1",
+        "request_sha256": "7d215c3a3fd8910356177e6ffe2a89ac1691c68eef6b23776ff45f860b0a1cef",
+        "response_sha256": "772025cacbd5135cd15e108301e5a2473ace029d96eb5f72127575d067319c10",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "provenance": {
+        "plan_sha256": "fc86a515c397671c38d6ed40083938075dcc30df692c771de7b660f66a25d193",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "qwen-shared_wrong",
+      "category": "shared_wrong",
+      "candidate_arm_id": "qwen",
+      "case_id": "banking77:test:27",
+      "input": "I'm still waiting for delivery of my new card, why is it taking so long?",
+      "reference_intent": "card_arrival",
+      "outputs_match": true,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"card_delivery_estimate\"}",
+        "parsed_intent": "card_delivery_estimate",
+        "correct": false,
+        "provider_route": "openai",
+        "receipt_sha256": "83b44b057e9c54add2464329895b98e1bfc98bd1a0e9c858a7ea274a564ce15a",
+        "request_sha256": "e7514903005193b31092d9facf73f27835faa3b94290ee76f3ea9fb80ed34bce",
+        "response_sha256": "4ff29adcfd8cbe92e01c0cca4b08d98199bd8c03d030df8f588f1c1c72346e01",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "candidate": {
+        "model": "qwen/qwen3.7-flash",
+        "name": "Qwen3.7-Flash",
+        "visible_answer": "{\"intent\":\"card_delivery_estimate\"}",
+        "parsed_intent": "card_delivery_estimate",
+        "correct": false,
+        "provider_route": "alibaba/us-east-1",
+        "receipt_sha256": "da53d9e4ec4f6658a99720ed6deb4b542dbc4373bdfc432744abbc45b9910852",
+        "request_sha256": "0088a2755744970a4b91a8c556176dcbdf8cd645f190a22cb32ec0d0e3aefcd8",
+        "response_sha256": "ab154837f5032dd17eb9284009bec20359e7ce1b497bdec488b8e6bd900a8185",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "provenance": {
+        "plan_sha256": "fc86a515c397671c38d6ed40083938075dcc30df692c771de7b660f66a25d193",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "qwen-correction",
+      "category": "correction",
+      "candidate_arm_id": "qwen",
+      "case_id": "banking77:test:21",
+      "input": "Status of the card I ordered.",
+      "reference_intent": "card_arrival",
+      "outputs_match": false,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"card_delivery_estimate\"}",
+        "parsed_intent": "card_delivery_estimate",
+        "correct": false,
+        "provider_route": "openai",
+        "receipt_sha256": "45294616436f78c8eaa173097c819f86e59b4e4d00135bb4a1f7f467bffa9ee8",
+        "request_sha256": "c3714dedcedd12e484da6029d079b39ccf4d28d907e6e836e61063a186465028",
+        "response_sha256": "537c01acb4a20773ed1093a9629bb5b146017b51d49691732ae33b4f3d2b46d2",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "candidate": {
+        "model": "qwen/qwen3.7-flash",
+        "name": "Qwen3.7-Flash",
+        "visible_answer": "{\"intent\":\"card_arrival\"}",
+        "parsed_intent": "card_arrival",
+        "correct": true,
+        "provider_route": "alibaba/us-east-1",
+        "receipt_sha256": "390ccd8789cf43e3d36c96915e7f6fc6fda2a24282d1e23f37aa2d2188619e0a",
+        "request_sha256": "03dcaf4654c1f020fb9e2556a45e7f76fe8cb10aa581e8914f2d03bf7c52f5ea",
+        "response_sha256": "fc6528909bb349f5071a4545d84dd801f7aca6f4d269f51f867bbed297f5443d",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "provenance": {
+        "plan_sha256": "fc86a515c397671c38d6ed40083938075dcc30df692c771de7b660f66a25d193",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "qwen-regression",
+      "category": "regression",
+      "candidate_arm_id": "qwen",
+      "case_id": "banking77:test:243",
+      "input": "Does your system support multiple currency.",
+      "reference_intent": "fiat_currency_support",
+      "outputs_match": false,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"fiat_currency_support\"}",
+        "parsed_intent": "fiat_currency_support",
+        "correct": true,
+        "provider_route": "openai",
+        "receipt_sha256": "f9bde41d4ddd045b4306208561a400803ada3ba3581eaf5bed0d041a28cd01c1",
+        "request_sha256": "80e1242173c5b00f98a6505fe3d030c5482481b9de5d50bd7bcb7442072041c4",
+        "response_sha256": "bf4736656a29d02db620793e57e9d8edc793fc19389d3f90db72b0afdc07806c",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "candidate": {
+        "model": "qwen/qwen3.7-flash",
+        "name": "Qwen3.7-Flash",
+        "visible_answer": "{\"intent\":\"supported_cards_and_currencies\"}",
+        "parsed_intent": "supported_cards_and_currencies",
+        "correct": false,
+        "provider_route": "alibaba/us-east-1",
+        "receipt_sha256": "3ddc0b362c30d49990db885c9d9b7f167038b51551a7ceac94993da3ee5acae6",
+        "request_sha256": "99a08436c90af3383597e431e9905c7411ad917a868decba478c356f5a84b459",
+        "response_sha256": "8fc1883b45e4da61f73d0303bd4dfcf827b016a74fd6228475d990f7962eacc2",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "provenance": {
+        "plan_sha256": "fc86a515c397671c38d6ed40083938075dcc30df692c771de7b660f66a25d193",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "qwen-different_wrong",
+      "category": "different_wrong",
+      "candidate_arm_id": "qwen",
+      "case_id": "banking77:test:586",
+      "input": "what is the charges for new card?",
+      "reference_intent": "contactless_not_working",
+      "outputs_match": false,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"order_physical_card\"}",
+        "parsed_intent": "order_physical_card",
+        "correct": false,
+        "provider_route": "openai",
+        "receipt_sha256": "c79857a77ae76513646f34c2de54fce6c1d7832152d2f5504cc921dfceee0df7",
+        "request_sha256": "6a9b57c9ec33c78e03984be6c5a8b048a3446aaf93814affb17f595aaa253657",
+        "response_sha256": "7945743c24f4d1d00a7e4655b881809863349af6a378cb8a671ac5431357d5a3",
+        "plan_sha256": "fa28afcfde818f2234f7d94fc946db34b2d7254acca6a8fc1b9ea7a829a12c33"
+      },
+      "candidate": {
+        "model": "qwen/qwen3.7-flash",
+        "name": "Qwen3.7-Flash",
+        "visible_answer": "{\"intent\":\"card_arrival\"}",
+        "parsed_intent": "card_arrival",
+        "correct": false,
+        "provider_route": "alibaba/us-east-1",
+        "receipt_sha256": "6e433f1faade0c3424e231bbe1a354ee652bde11b97166f6e26cb6ec7371661d",
+        "request_sha256": "5572d201cfbc468bb0f4e7950586478cfbb8ebb87d995f20c0346be4f947e7d5",
+        "response_sha256": "2228813284071559e2d11229add311b237432b89139908e051b097be63bb1541",
+        "plan_sha256": "fa28afcfde818f2234f7d94fc946db34b2d7254acca6a8fc1b9ea7a829a12c33"
+      },
+      "provenance": {
+        "plan_sha256": "fc86a515c397671c38d6ed40083938075dcc30df692c771de7b660f66a25d193",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "nemotron-both_correct",
+      "category": "both_correct",
+      "candidate_arm_id": "nemotron",
+      "case_id": "banking77:test:2",
+      "input": "I ordered a card but it has not arrived. Help please!",
+      "reference_intent": "card_arrival",
+      "outputs_match": true,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"card_arrival\"}",
+        "parsed_intent": "card_arrival",
+        "correct": true,
+        "provider_route": "openai",
+        "receipt_sha256": "590264eb8918169dad4ea57bb612c421d889ccee094bd11331c241b77190e028",
+        "request_sha256": "fac7bb7a024b32009fa2cf5b5274b2815ff84cbe984ea43827cc24299046989b",
+        "response_sha256": "c2d7abc7f7c7fb3abd1916ad347115c044c4fd23a29732ef7e2c6d2c05163da2",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "candidate": {
+        "model": "nvidia/nemotron-3.5-lightning",
+        "name": "Nemotron 3.5 Lightning",
+        "visible_answer": "{\"intent\":\"card_arrival\"}",
+        "parsed_intent": "card_arrival",
+        "correct": true,
+        "provider_route": "deepinfra/bf16",
+        "receipt_sha256": "eeea4984dfd6b94c6a2e5c9e0288e7853d49fa56aabaf9ef8b15deed097e55f2",
+        "request_sha256": "cb780bf146ce78e86f4ae3870fb016b286400f82f9578e5f3870e10e8c7c6694",
+        "response_sha256": "c53f3c5ea68c072ac60ea150bf5532c20f16838de78fdd23c20e15bdfc617950",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "provenance": {
+        "plan_sha256": "fc86a515c397671c38d6ed40083938075dcc30df692c771de7b660f66a25d193",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "nemotron-shared_wrong",
+      "category": "shared_wrong",
+      "candidate_arm_id": "nemotron",
+      "case_id": "banking77:test:27",
+      "input": "I'm still waiting for delivery of my new card, why is it taking so long?",
+      "reference_intent": "card_arrival",
+      "outputs_match": true,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"card_delivery_estimate\"}",
+        "parsed_intent": "card_delivery_estimate",
+        "correct": false,
+        "provider_route": "openai",
+        "receipt_sha256": "83b44b057e9c54add2464329895b98e1bfc98bd1a0e9c858a7ea274a564ce15a",
+        "request_sha256": "e7514903005193b31092d9facf73f27835faa3b94290ee76f3ea9fb80ed34bce",
+        "response_sha256": "4ff29adcfd8cbe92e01c0cca4b08d98199bd8c03d030df8f588f1c1c72346e01",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "candidate": {
+        "model": "nvidia/nemotron-3.5-lightning",
+        "name": "Nemotron 3.5 Lightning",
+        "visible_answer": "{\"intent\":\"card_delivery_estimate\"}",
+        "parsed_intent": "card_delivery_estimate",
+        "correct": false,
+        "provider_route": "deepinfra/bf16",
+        "receipt_sha256": "2b2b872b307083fe210b5af168a3eedae11561cc41e0acdbba854e07203c60bc",
+        "request_sha256": "2c078794688e345c6e7eaa04761eb9e0ac7f482e591cddd50545a6acb99a92cf",
+        "response_sha256": "ee9443f78770fada27318b4686e0615924599bef30dd32c220d1e6d2a2e03a15",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "provenance": {
+        "plan_sha256": "fc86a515c397671c38d6ed40083938075dcc30df692c771de7b660f66a25d193",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "nemotron-correction",
+      "category": "correction",
+      "candidate_arm_id": "nemotron",
+      "case_id": "banking77:test:21",
+      "input": "Status of the card I ordered.",
+      "reference_intent": "card_arrival",
+      "outputs_match": false,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"card_delivery_estimate\"}",
+        "parsed_intent": "card_delivery_estimate",
+        "correct": false,
+        "provider_route": "openai",
+        "receipt_sha256": "45294616436f78c8eaa173097c819f86e59b4e4d00135bb4a1f7f467bffa9ee8",
+        "request_sha256": "c3714dedcedd12e484da6029d079b39ccf4d28d907e6e836e61063a186465028",
+        "response_sha256": "537c01acb4a20773ed1093a9629bb5b146017b51d49691732ae33b4f3d2b46d2",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "candidate": {
+        "model": "nvidia/nemotron-3.5-lightning",
+        "name": "Nemotron 3.5 Lightning",
+        "visible_answer": "{\"intent\":\"card_arrival\"}",
+        "parsed_intent": "card_arrival",
+        "correct": true,
+        "provider_route": "deepinfra/bf16",
+        "receipt_sha256": "04538115745a0ac6299c5497baea87f68e29c554d517736bd57bd4b6f0e06873",
+        "request_sha256": "21426605aafbeede8070ce75283f40ea17777481f7bcdb1c7aadf1b23d581b42",
+        "response_sha256": "8da1fec56f13346ade06261abcfa35654c6b376e304f8c4a326ba711c30384f3",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "provenance": {
+        "plan_sha256": "fc86a515c397671c38d6ed40083938075dcc30df692c771de7b660f66a25d193",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "nemotron-regression",
+      "category": "regression",
+      "candidate_arm_id": "nemotron",
+      "case_id": "banking77:test:137",
+      "input": "Why is your exchange rate for my card payment wrong",
+      "reference_intent": "card_payment_wrong_exchange_rate",
+      "outputs_match": false,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"card_payment_wrong_exchange_rate\"}",
+        "parsed_intent": "card_payment_wrong_exchange_rate",
+        "correct": true,
+        "provider_route": "openai",
+        "receipt_sha256": "737627a5a5fffc74ef8645c72e2946a91b1e9177bed26474253b28bb0f456483",
+        "request_sha256": "595a080bc5d3aa283d530588c44f5f8984fc9fbac557ea62736ecaa3ddad61de",
+        "response_sha256": "487c96fc864cce71c15a31fb2313b9dad968d023c41d1287dfefc321f430f358",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "candidate": {
+        "model": "nvidia/nemotron-3.5-lightning",
+        "name": "Nemotron 3.5 Lightning",
+        "visible_answer": "{\"intent\":\"exchange_rate\"}",
+        "parsed_intent": "exchange_rate",
+        "correct": false,
+        "provider_route": "deepinfra/bf16",
+        "receipt_sha256": "7484defc85d0c00603876729e88217cdc1a6528cafda014d7951209e745df7c9",
+        "request_sha256": "e38a1df3e84e0b7dcbb7c6649ec7adb7a2d3035f63f407e02192930fe27c518d",
+        "response_sha256": "435d743346fea8cf9332dc260291f737f970c7a574f5bb15127c6c302a5f9e82",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "provenance": {
+        "plan_sha256": "fc86a515c397671c38d6ed40083938075dcc30df692c771de7b660f66a25d193",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "nemotron-different_wrong",
+      "category": "different_wrong",
+      "candidate_arm_id": "nemotron",
+      "case_id": "banking77:test:255",
+      "input": "How do I change currencies to euros?",
+      "reference_intent": "fiat_currency_support",
+      "outputs_match": false,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"exchange_via_app\"}",
+        "parsed_intent": "exchange_via_app",
+        "correct": false,
+        "provider_route": "openai",
+        "receipt_sha256": "5b26a5fcb17418bbe4da0a2673d72ebe1d15e46022df8f8a201a777a8715d0f8",
+        "request_sha256": "e8c1f42d5ba0fda2a401a797334bc3c329b4e0e1b4cd8d18e709f615e07995c9",
+        "response_sha256": "c1be4d8a8f3bfaf1f7b9c913b952b5d95d8e0071c5a038193243130bb0e709ac",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "candidate": {
+        "model": "nvidia/nemotron-3.5-lightning",
+        "name": "Nemotron 3.5 Lightning",
+        "visible_answer": "{\"intent\":\"exchange_rate\"}",
+        "parsed_intent": "exchange_rate",
+        "correct": false,
+        "provider_route": "deepinfra/bf16",
+        "receipt_sha256": "c95dc6f96f96439ea41de8b6098e3b68595425b3c330f23595fa62515b78b0dd",
+        "request_sha256": "b827cc11d6cbd890580c1dba0a1bf7bf3ed9546f7b11d4c7d8f266f3b3e94aa5",
+        "response_sha256": "be40bf20b83761152c8466c845984b6a56139b1badce639071be56a1d7f1638b",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "provenance": {
+        "plan_sha256": "fc86a515c397671c38d6ed40083938075dcc30df692c771de7b660f66a25d193",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "glm-both_correct",
+      "category": "both_correct",
+      "candidate_arm_id": "glm",
+      "case_id": "banking77:test:2",
+      "input": "I ordered a card but it has not arrived. Help please!",
+      "reference_intent": "card_arrival",
+      "outputs_match": true,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"card_arrival\"}",
+        "parsed_intent": "card_arrival",
+        "correct": true,
+        "provider_route": "openai",
+        "receipt_sha256": "590264eb8918169dad4ea57bb612c421d889ccee094bd11331c241b77190e028",
+        "request_sha256": "fac7bb7a024b32009fa2cf5b5274b2815ff84cbe984ea43827cc24299046989b",
+        "response_sha256": "c2d7abc7f7c7fb3abd1916ad347115c044c4fd23a29732ef7e2c6d2c05163da2",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "candidate": {
+        "model": "z-ai/glm-5.3-flash",
+        "name": "GLM-5.3-Flash",
+        "visible_answer": "{\"intent\":\"card_arrival\"}",
+        "parsed_intent": "card_arrival",
+        "correct": true,
+        "provider_route": "z-ai/fp8",
+        "receipt_sha256": "1afa9d9402d2de096042cd13edd3dae9f6498eefc0ec336f308a23b7b667e9bb",
+        "request_sha256": "ab957f02e8177994c6e9aeb184399a3b7c091d454b9332ed1d6f2139d2983f82",
+        "response_sha256": "1a015e9362c8bd1494970b2190e95f833e72e11370e946740cd45a0aaf526565",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "provenance": {
+        "plan_sha256": "fc86a515c397671c38d6ed40083938075dcc30df692c771de7b660f66a25d193",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "glm-shared_wrong",
+      "category": "shared_wrong",
+      "candidate_arm_id": "glm",
+      "case_id": "banking77:test:21",
+      "input": "Status of the card I ordered.",
+      "reference_intent": "card_arrival",
+      "outputs_match": true,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"card_delivery_estimate\"}",
+        "parsed_intent": "card_delivery_estimate",
+        "correct": false,
+        "provider_route": "openai",
+        "receipt_sha256": "45294616436f78c8eaa173097c819f86e59b4e4d00135bb4a1f7f467bffa9ee8",
+        "request_sha256": "c3714dedcedd12e484da6029d079b39ccf4d28d907e6e836e61063a186465028",
+        "response_sha256": "537c01acb4a20773ed1093a9629bb5b146017b51d49691732ae33b4f3d2b46d2",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "candidate": {
+        "model": "z-ai/glm-5.3-flash",
+        "name": "GLM-5.3-Flash",
+        "visible_answer": "{\"intent\":\"card_delivery_estimate\"}",
+        "parsed_intent": "card_delivery_estimate",
+        "correct": false,
+        "provider_route": "z-ai/fp8",
+        "receipt_sha256": "3b8c9a3e07e406fc6af6d87510f585e9b3d3e93c8c6d2bd2ebd019d77c058d68",
+        "request_sha256": "86adf316affd7b5ebc5473517c3e02a201ac4929d8f947f319607258f3a0c0f0",
+        "response_sha256": "fca6f1b0df2ffee3c0d322109febb279195dc35008fd17f6c3b1b3e656116249",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "provenance": {
+        "plan_sha256": "fc86a515c397671c38d6ed40083938075dcc30df692c771de7b660f66a25d193",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "glm-correction",
+      "category": "correction",
+      "candidate_arm_id": "glm",
+      "case_id": "banking77:test:27",
+      "input": "I'm still waiting for delivery of my new card, why is it taking so long?",
+      "reference_intent": "card_arrival",
+      "outputs_match": false,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"card_delivery_estimate\"}",
+        "parsed_intent": "card_delivery_estimate",
+        "correct": false,
+        "provider_route": "openai",
+        "receipt_sha256": "83b44b057e9c54add2464329895b98e1bfc98bd1a0e9c858a7ea274a564ce15a",
+        "request_sha256": "e7514903005193b31092d9facf73f27835faa3b94290ee76f3ea9fb80ed34bce",
+        "response_sha256": "4ff29adcfd8cbe92e01c0cca4b08d98199bd8c03d030df8f588f1c1c72346e01",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "candidate": {
+        "model": "z-ai/glm-5.3-flash",
+        "name": "GLM-5.3-Flash",
+        "visible_answer": "{\"intent\":\"card_arrival\"}",
+        "parsed_intent": "card_arrival",
+        "correct": true,
+        "provider_route": "z-ai/fp8",
+        "receipt_sha256": "c40fb0b47af378f58429fd54f282d0fd8f094fd777cf015d044c9a19aa53aeda",
+        "request_sha256": "156dc4b2877ee1f7dc0bb331b136f3786d7573bee743212eb7a206d533ecb656",
+        "response_sha256": "023113ecc61de05014e56874f0149a8daa513090b626add1211e005f7c915e3e",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "provenance": {
+        "plan_sha256": "fc86a515c397671c38d6ed40083938075dcc30df692c771de7b660f66a25d193",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "glm-regression",
+      "category": "regression",
+      "candidate_arm_id": "glm",
+      "case_id": "banking77:test:243",
+      "input": "Does your system support multiple currency.",
+      "reference_intent": "fiat_currency_support",
+      "outputs_match": false,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"fiat_currency_support\"}",
+        "parsed_intent": "fiat_currency_support",
+        "correct": true,
+        "provider_route": "openai",
+        "receipt_sha256": "f9bde41d4ddd045b4306208561a400803ada3ba3581eaf5bed0d041a28cd01c1",
+        "request_sha256": "80e1242173c5b00f98a6505fe3d030c5482481b9de5d50bd7bcb7442072041c4",
+        "response_sha256": "bf4736656a29d02db620793e57e9d8edc793fc19389d3f90db72b0afdc07806c",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "candidate": {
+        "model": "z-ai/glm-5.3-flash",
+        "name": "GLM-5.3-Flash",
+        "visible_answer": "{\"intent\":\"supported_cards_and_currencies\"}",
+        "parsed_intent": "supported_cards_and_currencies",
+        "correct": false,
+        "provider_route": "z-ai/fp8",
+        "receipt_sha256": "05899c906c9135137262701682d89369823c53c1d5cb1df6c791071b45eb92f4",
+        "request_sha256": "b1ef17edb6cabbffc7e7eeb25d5b81f9e711144eec904c89026e4a3c9135984d",
+        "response_sha256": "5ed71ac632e2f68d199231f82c1df70bb5d7aad8fc1e10855c75181bca0464ee",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "provenance": {
+        "plan_sha256": "fc86a515c397671c38d6ed40083938075dcc30df692c771de7b660f66a25d193",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "glm-different_wrong",
+      "category": "different_wrong",
+      "candidate_arm_id": "glm",
+      "case_id": "banking77:test:586",
+      "input": "what is the charges for new card?",
+      "reference_intent": "contactless_not_working",
+      "outputs_match": false,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"order_physical_card\"}",
+        "parsed_intent": "order_physical_card",
+        "correct": false,
+        "provider_route": "openai",
+        "receipt_sha256": "c79857a77ae76513646f34c2de54fce6c1d7832152d2f5504cc921dfceee0df7",
+        "request_sha256": "6a9b57c9ec33c78e03984be6c5a8b048a3446aaf93814affb17f595aaa253657",
+        "response_sha256": "7945743c24f4d1d00a7e4655b881809863349af6a378cb8a671ac5431357d5a3",
+        "plan_sha256": "fa28afcfde818f2234f7d94fc946db34b2d7254acca6a8fc1b9ea7a829a12c33"
+      },
+      "candidate": {
+        "model": "z-ai/glm-5.3-flash",
+        "name": "GLM-5.3-Flash",
+        "visible_answer": "{\"intent\":\"getting_spare_card\"}",
+        "parsed_intent": "getting_spare_card",
+        "correct": false,
+        "provider_route": "z-ai/fp8",
+        "receipt_sha256": "fe337a4cca35bd6a4c23e64d2dd52d60306c284f8635bc465559244800a954fd",
+        "request_sha256": "41cadadf4f548b874fe76d77524f9c26142a7743d9573af56ac9cac22d4998b8",
+        "response_sha256": "489a789f7ad06011eb7528153a1fbd426f95e1b4f2115799efa170102d3b89e6",
+        "plan_sha256": "fa28afcfde818f2234f7d94fc946db34b2d7254acca6a8fc1b9ea7a829a12c33"
+      },
+      "provenance": {
+        "plan_sha256": "fc86a515c397671c38d6ed40083938075dcc30df692c771de7b660f66a25d193",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "gemini-flash-lite:both_correct:banking77:test:2",
+      "category": "both_correct",
+      "candidate_arm_id": "gemini-flash-lite",
+      "case_id": "banking77:test:2",
+      "input": "I ordered a card but it has not arrived. Help please!",
+      "reference_intent": "card_arrival",
+      "outputs_match": true,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"card_arrival\"}",
+        "parsed_intent": "card_arrival",
+        "correct": true,
+        "provider_route": "openai",
+        "receipt_sha256": "590264eb8918169dad4ea57bb612c421d889ccee094bd11331c241b77190e028",
+        "response_sha256": "c2d7abc7f7c7fb3abd1916ad347115c044c4fd23a29732ef7e2c6d2c05163da2",
+        "request_sha256": "fac7bb7a024b32009fa2cf5b5274b2815ff84cbe984ea43827cc24299046989b",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "candidate": {
+        "model": "google/gemini-3.5-flash-lite",
+        "name": "Gemini 3.5 Flash Lite",
+        "visible_answer": "```json\n{\"intent\":\"card_arrival\"}\n```",
+        "parsed_intent": "card_arrival",
+        "correct": true,
+        "provider_route": "google-ai-studio",
+        "receipt_sha256": "f4dae471b79c99ce36aa8551f873f7b78935946a817cdbb473d3cdcbc093e5cf",
+        "response_sha256": "08ab9dd75119f5cf317f3ceea3965a03ba7f6b15cb61fb2e1e9779bbddd0028c",
+        "request_sha256": "8581f6c5104e1e1663743260c95d724b5086dcc5cbbfc16a9f640d86fda73124",
+        "plan_sha256": "e1cbd00495afb9c5aa74e2b024c39d0034eb1c70130dbdc55109b1d79661075b"
+      },
+      "provenance": {
+        "plan_sha256": "e1cbd00495afb9c5aa74e2b024c39d0034eb1c70130dbdc55109b1d79661075b",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "gemini-flash-lite:shared_wrong:banking77:test:27",
+      "category": "shared_wrong",
+      "candidate_arm_id": "gemini-flash-lite",
+      "case_id": "banking77:test:27",
+      "input": "I'm still waiting for delivery of my new card, why is it taking so long?",
+      "reference_intent": "card_arrival",
+      "outputs_match": true,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"card_delivery_estimate\"}",
+        "parsed_intent": "card_delivery_estimate",
+        "correct": false,
+        "provider_route": "openai",
+        "receipt_sha256": "83b44b057e9c54add2464329895b98e1bfc98bd1a0e9c858a7ea274a564ce15a",
+        "response_sha256": "4ff29adcfd8cbe92e01c0cca4b08d98199bd8c03d030df8f588f1c1c72346e01",
+        "request_sha256": "e7514903005193b31092d9facf73f27835faa3b94290ee76f3ea9fb80ed34bce",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "candidate": {
+        "model": "google/gemini-3.5-flash-lite",
+        "name": "Gemini 3.5 Flash Lite",
+        "visible_answer": "{\"intent\":\"card_delivery_estimate\"}",
+        "parsed_intent": "card_delivery_estimate",
+        "correct": false,
+        "provider_route": "google-ai-studio",
+        "receipt_sha256": "419a0e5778303e38be6eb6a2a8288c2bebe5679f48f0375a04e42c298882a936",
+        "response_sha256": "1fbc4afc5d4d8f73be57fa80e505a0143a2b78a12acebc5e27212485a2e624c0",
+        "request_sha256": "ce04cb67a63117fa4fba145360a0f5c2239362746e3311e8a7263203da0a920c",
+        "plan_sha256": "d0e53b2ccbc823fb7a960bf5cf31e12c3c95b2cfc7465691725175e81e7e649c"
+      },
+      "provenance": {
+        "plan_sha256": "d0e53b2ccbc823fb7a960bf5cf31e12c3c95b2cfc7465691725175e81e7e649c",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "gemini-flash-lite:correction:banking77:test:21",
+      "category": "correction",
+      "candidate_arm_id": "gemini-flash-lite",
+      "case_id": "banking77:test:21",
+      "input": "Status of the card I ordered.",
+      "reference_intent": "card_arrival",
+      "outputs_match": false,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"card_delivery_estimate\"}",
+        "parsed_intent": "card_delivery_estimate",
+        "correct": false,
+        "provider_route": "openai",
+        "receipt_sha256": "45294616436f78c8eaa173097c819f86e59b4e4d00135bb4a1f7f467bffa9ee8",
+        "response_sha256": "537c01acb4a20773ed1093a9629bb5b146017b51d49691732ae33b4f3d2b46d2",
+        "request_sha256": "c3714dedcedd12e484da6029d079b39ccf4d28d907e6e836e61063a186465028",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "candidate": {
+        "model": "google/gemini-3.5-flash-lite",
+        "name": "Gemini 3.5 Flash Lite",
+        "visible_answer": "```json\n{\"intent\":\"card_arrival\"}\n```",
+        "parsed_intent": "card_arrival",
+        "correct": true,
+        "provider_route": "google-ai-studio",
+        "receipt_sha256": "1765422c24d07182b5aab6050f5c1cdd3e33bf64328751cdc414fc1e9818fb60",
+        "response_sha256": "56e48506e6b1d40ed75392225947c0611e33bc550a5a8a92b0628197b8b7b566",
+        "request_sha256": "2cc4746bde72e447b6144c07e6e9516b2ac15a7d09f6c22fb5898d1d85aa6dd2",
+        "plan_sha256": "e1cbd00495afb9c5aa74e2b024c39d0034eb1c70130dbdc55109b1d79661075b"
+      },
+      "provenance": {
+        "plan_sha256": "e1cbd00495afb9c5aa74e2b024c39d0034eb1c70130dbdc55109b1d79661075b",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "gemini-flash-lite:regression:banking77:test:560",
+      "category": "regression",
+      "candidate_arm_id": "gemini-flash-lite",
+      "case_id": "banking77:test:560",
+      "input": "Are contactless payments enabled on my new card?",
+      "reference_intent": "contactless_not_working",
+      "outputs_match": false,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"contactless_not_working\"}",
+        "parsed_intent": "contactless_not_working",
+        "correct": true,
+        "provider_route": "openai",
+        "receipt_sha256": "863513fa6a22fa8bfd9dc73ba8fe97c8041efdf607820fbc170ad60e1e7270f7",
+        "response_sha256": "78a4f90b190b685fb7315c74c324b8a242debf725a6f28da9068a0118fb229a7",
+        "request_sha256": "cefcb43247553c8eb7b66ffe6bbfa5ba7717b23d60a9ad3496074a77d6ee2c10",
+        "plan_sha256": "fa28afcfde818f2234f7d94fc946db34b2d7254acca6a8fc1b9ea7a829a12c33"
+      },
+      "candidate": {
+        "model": "google/gemini-3.5-flash-lite",
+        "name": "Gemini 3.5 Flash Lite",
+        "visible_answer": "{\"intent\":\"activate_my_card\"}",
+        "parsed_intent": "activate_my_card",
+        "correct": false,
+        "provider_route": "google-ai-studio",
+        "receipt_sha256": "3962a824bc8d2a47dac281d444f3595702c2419d40f0c488c5a047f2a0da2b50",
+        "response_sha256": "6ab17d7f71be6624b53e1afbc5336e01ccd6f6f0d4abdb931ba4ba48cdda7c73",
+        "request_sha256": "cad8b9525dd5069f527010b3433e7b6197b10f24bfca51510146e3d31c922763",
+        "plan_sha256": "d0e53b2ccbc823fb7a960bf5cf31e12c3c95b2cfc7465691725175e81e7e649c"
+      },
+      "provenance": {
+        "plan_sha256": "d0e53b2ccbc823fb7a960bf5cf31e12c3c95b2cfc7465691725175e81e7e649c",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "gemini-flash-lite:different_wrong:banking77:test:382",
+      "category": "different_wrong",
+      "candidate_arm_id": "gemini-flash-lite",
+      "case_id": "banking77:test:382",
+      "input": "I broke my card",
+      "reference_intent": "card_not_working",
+      "outputs_match": false,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"getting_spare_card\"}",
+        "parsed_intent": "getting_spare_card",
+        "correct": false,
+        "provider_route": "openai",
+        "receipt_sha256": "8759d1974ee8ba2a4cc159afd88502fb1c89936454b46445c6108e4562e114fd",
+        "response_sha256": "a21d386c3aaef37383da63f6821780fda3eca5e838f8a2ae43040af497c32df6",
+        "request_sha256": "837d08959660607e93449ab2580e5fc25f19e59eac7e8fa6a3224d9d82517433",
+        "plan_sha256": "fa28afcfde818f2234f7d94fc946db34b2d7254acca6a8fc1b9ea7a829a12c33"
+      },
+      "candidate": {
+        "model": "google/gemini-3.5-flash-lite",
+        "name": "Gemini 3.5 Flash Lite",
+        "visible_answer": "{\"intent\":\"lost_or_stolen_card\"}",
+        "parsed_intent": "lost_or_stolen_card",
+        "correct": false,
+        "provider_route": "google-ai-studio",
+        "receipt_sha256": "f9174447931a896f194b6a02da077efe037a3521d4e6ab915b45e3741223dd0f",
+        "response_sha256": "f0cc85b11e64723d6277d7929d81c3d597e9fc88961b55efcdeb4ef68414f76e",
+        "request_sha256": "2c08f14c0e7fb733aa687631600eb88665e347facd1bcf9744ce1183d95586af",
+        "plan_sha256": "d0e53b2ccbc823fb7a960bf5cf31e12c3c95b2cfc7465691725175e81e7e649c"
+      },
+      "provenance": {
+        "plan_sha256": "d0e53b2ccbc823fb7a960bf5cf31e12c3c95b2cfc7465691725175e81e7e649c",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "gemini-flash:both_correct:banking77:test:2",
+      "category": "both_correct",
+      "candidate_arm_id": "gemini-flash",
+      "case_id": "banking77:test:2",
+      "input": "I ordered a card but it has not arrived. Help please!",
+      "reference_intent": "card_arrival",
+      "outputs_match": true,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"card_arrival\"}",
+        "parsed_intent": "card_arrival",
+        "correct": true,
+        "provider_route": "openai",
+        "receipt_sha256": "590264eb8918169dad4ea57bb612c421d889ccee094bd11331c241b77190e028",
+        "response_sha256": "c2d7abc7f7c7fb3abd1916ad347115c044c4fd23a29732ef7e2c6d2c05163da2",
+        "request_sha256": "fac7bb7a024b32009fa2cf5b5274b2815ff84cbe984ea43827cc24299046989b",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "candidate": {
+        "model": "google/gemini-3.8-flash",
+        "name": "Gemini 3.8 Flash",
+        "visible_answer": "{\"intent\":\"card_arrival\"}",
+        "parsed_intent": "card_arrival",
+        "correct": true,
+        "provider_route": "google-ai-studio",
+        "receipt_sha256": "b6b3fc1854d373a0712be0ff24518f99beb6533e4bb90fb74dc92f56959d4076",
+        "response_sha256": "5a4c80940fab1e0214426f6a0b583833afafc054da4f058eb1fb2cf3490d210a",
+        "request_sha256": "d1ac78514e2207673b8a308833fef2df83459895f4ebdae67350ca9899076902",
+        "plan_sha256": "e1cbd00495afb9c5aa74e2b024c39d0034eb1c70130dbdc55109b1d79661075b"
+      },
+      "provenance": {
+        "plan_sha256": "e1cbd00495afb9c5aa74e2b024c39d0034eb1c70130dbdc55109b1d79661075b",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "gemini-flash:shared_wrong:banking77:test:121",
+      "category": "shared_wrong",
+      "candidate_arm_id": "gemini-flash",
+      "case_id": "banking77:test:121",
+      "input": "I made a currency exchange and think I was charged more than I should of been.",
+      "reference_intent": "card_payment_wrong_exchange_rate",
+      "outputs_match": true,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"exchange_charge\"}",
+        "parsed_intent": "exchange_charge",
+        "correct": false,
+        "provider_route": "openai",
+        "receipt_sha256": "96df5f011f7f5b627f6390cea52a6770ff51c2d840821bddac0429cf2c9a22dd",
+        "response_sha256": "4a7c922ca1b8df8c51579c4b072e50f0e75398a93bbb692b5c4c088fbde7b1da",
+        "request_sha256": "b68aa904f86e9278a5aaee57f536fcb79af44fb583194271d106ca8d739486b3",
+        "plan_sha256": "fc86a515c397671c38d6ed40083938075dcc30df692c771de7b660f66a25d193"
+      },
+      "candidate": {
+        "model": "google/gemini-3.8-flash",
+        "name": "Gemini 3.8 Flash",
+        "visible_answer": "{\"intent\":\"exchange_charge\"}",
+        "parsed_intent": "exchange_charge",
+        "correct": false,
+        "provider_route": "google-ai-studio",
+        "receipt_sha256": "56625ea3d8d7d5a112fcaa70b149de6e634ab69e9f696e6028498e1fce430bf1",
+        "response_sha256": "1cfdb5181a9e1ea32f0d4218fc889a25cdeb968797a8d0f663c88718d7ed97d3",
+        "request_sha256": "7e19f84eb3b718a21f5f059ae66f9b577665494b67dd419bb14a04207cb73238",
+        "plan_sha256": "e1cbd00495afb9c5aa74e2b024c39d0034eb1c70130dbdc55109b1d79661075b"
+      },
+      "provenance": {
+        "plan_sha256": "e1cbd00495afb9c5aa74e2b024c39d0034eb1c70130dbdc55109b1d79661075b",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "gemini-flash:correction:banking77:test:21",
+      "category": "correction",
+      "candidate_arm_id": "gemini-flash",
+      "case_id": "banking77:test:21",
+      "input": "Status of the card I ordered.",
+      "reference_intent": "card_arrival",
+      "outputs_match": false,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"card_delivery_estimate\"}",
+        "parsed_intent": "card_delivery_estimate",
+        "correct": false,
+        "provider_route": "openai",
+        "receipt_sha256": "45294616436f78c8eaa173097c819f86e59b4e4d00135bb4a1f7f467bffa9ee8",
+        "response_sha256": "537c01acb4a20773ed1093a9629bb5b146017b51d49691732ae33b4f3d2b46d2",
+        "request_sha256": "c3714dedcedd12e484da6029d079b39ccf4d28d907e6e836e61063a186465028",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "candidate": {
+        "model": "google/gemini-3.8-flash",
+        "name": "Gemini 3.8 Flash",
+        "visible_answer": "{\"intent\":\"card_arrival\"}",
+        "parsed_intent": "card_arrival",
+        "correct": true,
+        "provider_route": "google-ai-studio",
+        "receipt_sha256": "36924a80adbb55b30bd1235337e1b7efc59bb1cc60b307dd3ceb2b20ee642531",
+        "response_sha256": "e7663f1ddbc80dc455cd5e12442fd8b8e8b1e8e801e1e82eee96e73e986a74e1",
+        "request_sha256": "bae06e35d45d42610d24c5629ad373880269f9e30df14e98181d6f327efb1ba8",
+        "plan_sha256": "e1cbd00495afb9c5aa74e2b024c39d0034eb1c70130dbdc55109b1d79661075b"
+      },
+      "provenance": {
+        "plan_sha256": "e1cbd00495afb9c5aa74e2b024c39d0034eb1c70130dbdc55109b1d79661075b",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "gemini-flash:regression:banking77:test:901",
+      "category": "regression",
+      "candidate_arm_id": "gemini-flash",
+      "case_id": "banking77:test:901",
+      "input": "Which forms of currency are accepted?",
+      "reference_intent": "supported_cards_and_currencies",
+      "outputs_match": false,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"supported_cards_and_currencies\"}",
+        "parsed_intent": "supported_cards_and_currencies",
+        "correct": true,
+        "provider_route": "openai",
+        "receipt_sha256": "aaa4d0e40d2d96dc6e502390aeb17edfbe6e0d498cb89b001207722e980b6fd9",
+        "response_sha256": "7e8e2eb4502876a787acd4f421e1f19261a8e27f36a1c68a123c93c7e6aa6357",
+        "request_sha256": "5e07b720c40eb70b10b59bbef22d498d1430c492aaa0aeebd6daacac49b1211b",
+        "plan_sha256": "fa28afcfde818f2234f7d94fc946db34b2d7254acca6a8fc1b9ea7a829a12c33"
+      },
+      "candidate": {
+        "model": "google/gemini-3.8-flash",
+        "name": "Gemini 3.8 Flash",
+        "visible_answer": "{\"intent\":\"fiat_currency_support\"}",
+        "parsed_intent": "fiat_currency_support",
+        "correct": false,
+        "provider_route": "google-ai-studio",
+        "receipt_sha256": "407937293e025cff47b43681d0e456f75ded030602935e0994e522da1116de74",
+        "response_sha256": "465e8f9ae8fba42f9f1c5d71ee56e4e51edc6c480ba3f25b345d71da3d1d72f9",
+        "request_sha256": "a52b19418a092d065136b57d0e9e37a217ab390953510300ee36ea268f1ca353",
+        "plan_sha256": "d0e53b2ccbc823fb7a960bf5cf31e12c3c95b2cfc7465691725175e81e7e649c"
+      },
+      "provenance": {
+        "plan_sha256": "d0e53b2ccbc823fb7a960bf5cf31e12c3c95b2cfc7465691725175e81e7e649c",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "gemini-flash:different_wrong:banking77:test:416",
+      "category": "different_wrong",
+      "candidate_arm_id": "gemini-flash",
+      "case_id": "banking77:test:416",
+      "input": "How would I use my money in a different country?",
+      "reference_intent": "exchange_via_app",
+      "outputs_match": false,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"country_support\"}",
+        "parsed_intent": "country_support",
+        "correct": false,
+        "provider_route": "openai",
+        "receipt_sha256": "6f91aaff5c61d975ccaa0c6571df3ee78a3414fd6a6bcf6ed7c9e8215aaee428",
+        "response_sha256": "9a8284aa0e3a1fe588a74a46a840923bce158d638ee9a4474fed6ec1c6f7d37d",
+        "request_sha256": "04a0b49576ef174d3383ead16fbb96d36b04fddda346077c4e8a00d1fd4773c6",
+        "plan_sha256": "fa28afcfde818f2234f7d94fc946db34b2d7254acca6a8fc1b9ea7a829a12c33"
+      },
+      "candidate": {
+        "model": "google/gemini-3.8-flash",
+        "name": "Gemini 3.8 Flash",
+        "visible_answer": "{\"intent\":\"card_acceptance\"}",
+        "parsed_intent": "card_acceptance",
+        "correct": false,
+        "provider_route": "google-ai-studio",
+        "receipt_sha256": "5ee8beb61625fca716fe63464c4ac4e45f062d9c4a6f08c6ebd88e701cdb5afd",
+        "response_sha256": "b359d844a3b650a0696948dea23087634a19dca9ea6535635dafb07df3487803",
+        "request_sha256": "ace96a66f002ad3718e67b25837d1f65b15f6feffbd9cc7360d9f871c575760c",
+        "plan_sha256": "d0e53b2ccbc823fb7a960bf5cf31e12c3c95b2cfc7465691725175e81e7e649c"
+      },
+      "provenance": {
+        "plan_sha256": "d0e53b2ccbc823fb7a960bf5cf31e12c3c95b2cfc7465691725175e81e7e649c",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "gpt-luna:both_correct:banking77:test:2",
+      "category": "both_correct",
+      "candidate_arm_id": "gpt-luna",
+      "case_id": "banking77:test:2",
+      "input": "I ordered a card but it has not arrived. Help please!",
+      "reference_intent": "card_arrival",
+      "outputs_match": true,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"card_arrival\"}",
+        "parsed_intent": "card_arrival",
+        "correct": true,
+        "provider_route": "openai",
+        "receipt_sha256": "590264eb8918169dad4ea57bb612c421d889ccee094bd11331c241b77190e028",
+        "response_sha256": "c2d7abc7f7c7fb3abd1916ad347115c044c4fd23a29732ef7e2c6d2c05163da2",
+        "request_sha256": "fac7bb7a024b32009fa2cf5b5274b2815ff84cbe984ea43827cc24299046989b",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "candidate": {
+        "model": "openai/gpt-6-luna",
+        "name": "GPT-6 Luna",
+        "visible_answer": "{\"intent\":\"card_arrival\"}",
+        "parsed_intent": "card_arrival",
+        "correct": true,
+        "provider_route": "openai",
+        "receipt_sha256": "ed2bf7e2e3d3d762a8c9976010a2f1f7b944c2d93c0547b82333a6a665caa462",
+        "response_sha256": "e30e1ba95f5041cb07a4e106614f7fb5343abbc87d3d1a912e32849184510a12",
+        "request_sha256": "79aa4316d77d815bf3854cc234c42aeca8f5d883cd2b24ce6e734273fbbbd84e",
+        "plan_sha256": "e1cbd00495afb9c5aa74e2b024c39d0034eb1c70130dbdc55109b1d79661075b"
+      },
+      "provenance": {
+        "plan_sha256": "e1cbd00495afb9c5aa74e2b024c39d0034eb1c70130dbdc55109b1d79661075b",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "gpt-luna:shared_wrong:banking77:test:27",
+      "category": "shared_wrong",
+      "candidate_arm_id": "gpt-luna",
+      "case_id": "banking77:test:27",
+      "input": "I'm still waiting for delivery of my new card, why is it taking so long?",
+      "reference_intent": "card_arrival",
+      "outputs_match": true,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"card_delivery_estimate\"}",
+        "parsed_intent": "card_delivery_estimate",
+        "correct": false,
+        "provider_route": "openai",
+        "receipt_sha256": "83b44b057e9c54add2464329895b98e1bfc98bd1a0e9c858a7ea274a564ce15a",
+        "response_sha256": "4ff29adcfd8cbe92e01c0cca4b08d98199bd8c03d030df8f588f1c1c72346e01",
+        "request_sha256": "e7514903005193b31092d9facf73f27835faa3b94290ee76f3ea9fb80ed34bce",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "candidate": {
+        "model": "openai/gpt-6-luna",
+        "name": "GPT-6 Luna",
+        "visible_answer": "{\"intent\":\"card_delivery_estimate\"}",
+        "parsed_intent": "card_delivery_estimate",
+        "correct": false,
+        "provider_route": "openai",
+        "receipt_sha256": "fe9f0c69ad82926a0ebb27b8bc3d5585953d843f33b493292d0680dce30f1818",
+        "response_sha256": "8a8bd2b4f122b6c69fb4c2263b7ad09b9f5a5944f2870f14b3d946de2457958b",
+        "request_sha256": "361c4fb5eaededcf398f9a8676b947c00b024fbe5437ec5a4bf33a495599b924",
+        "plan_sha256": "d0e53b2ccbc823fb7a960bf5cf31e12c3c95b2cfc7465691725175e81e7e649c"
+      },
+      "provenance": {
+        "plan_sha256": "d0e53b2ccbc823fb7a960bf5cf31e12c3c95b2cfc7465691725175e81e7e649c",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "gpt-luna:correction:banking77:test:21",
+      "category": "correction",
+      "candidate_arm_id": "gpt-luna",
+      "case_id": "banking77:test:21",
+      "input": "Status of the card I ordered.",
+      "reference_intent": "card_arrival",
+      "outputs_match": false,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"card_delivery_estimate\"}",
+        "parsed_intent": "card_delivery_estimate",
+        "correct": false,
+        "provider_route": "openai",
+        "receipt_sha256": "45294616436f78c8eaa173097c819f86e59b4e4d00135bb4a1f7f467bffa9ee8",
+        "response_sha256": "537c01acb4a20773ed1093a9629bb5b146017b51d49691732ae33b4f3d2b46d2",
+        "request_sha256": "c3714dedcedd12e484da6029d079b39ccf4d28d907e6e836e61063a186465028",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "candidate": {
+        "model": "openai/gpt-6-luna",
+        "name": "GPT-6 Luna",
+        "visible_answer": "{\"intent\":\"card_arrival\"}",
+        "parsed_intent": "card_arrival",
+        "correct": true,
+        "provider_route": "openai",
+        "receipt_sha256": "35333ef88adbdfb4d5d1ea62972d69b2845918fb8c3b08ddc49d13576e70813a",
+        "response_sha256": "551502e7359e0e13849fa55147ddf4eaac391d68c193d098eefff81d18a5548a",
+        "request_sha256": "682dfdf856a187bb92d6a4d606b3e5085e0e36d6f2493d7a5a624e5f55fc2b27",
+        "plan_sha256": "e1cbd00495afb9c5aa74e2b024c39d0034eb1c70130dbdc55109b1d79661075b"
+      },
+      "provenance": {
+        "plan_sha256": "e1cbd00495afb9c5aa74e2b024c39d0034eb1c70130dbdc55109b1d79661075b",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "gpt-luna:regression:banking77:test:274",
+      "category": "regression",
+      "candidate_arm_id": "gpt-luna",
+      "case_id": "banking77:test:274",
+      "input": "How man currencies can I hold?",
+      "reference_intent": "fiat_currency_support",
+      "outputs_match": false,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"fiat_currency_support\"}",
+        "parsed_intent": "fiat_currency_support",
+        "correct": true,
+        "provider_route": "openai",
+        "receipt_sha256": "b4127726699f600fce2293fbc3eba31bfb310e9297d5cd9941f43e92aa6bb32e",
+        "response_sha256": "9e41bede87331961d72f1347957944fec649df688659134d10a2e9d01a3fbcfd",
+        "request_sha256": "d1170e7c7bca8bf66ba0fdfd34128594bc1356f8aef5bb88704391c87472cc15",
+        "plan_sha256": "9233745dc9c1a76050b1d2922aac48dcc4454ab2831b20fc29dec5c11b4c91b5"
+      },
+      "candidate": {
+        "model": "openai/gpt-6-luna",
+        "name": "GPT-6 Luna",
+        "visible_answer": "{\"intent\":\"supported_cards_and_currencies\"}",
+        "parsed_intent": "supported_cards_and_currencies",
+        "correct": false,
+        "provider_route": "openai",
+        "receipt_sha256": "ca3de7c03d33d000a3d44e7bd537c2ce80b9d73f713cba133f90622a65acf701",
+        "response_sha256": "b925aeed29b3be9c4c93ab987ed9ed76fdf76b8d55eef8b0e808b671faf3a76f",
+        "request_sha256": "524b1e6445560665248884dbcd304d92ccdcbed25f9372dc09666c34f9fbb4a6",
+        "plan_sha256": "d0e53b2ccbc823fb7a960bf5cf31e12c3c95b2cfc7465691725175e81e7e649c"
+      },
+      "provenance": {
+        "plan_sha256": "d0e53b2ccbc823fb7a960bf5cf31e12c3c95b2cfc7465691725175e81e7e649c",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "gpt-luna:different_wrong:banking77:test:586",
+      "category": "different_wrong",
+      "candidate_arm_id": "gpt-luna",
+      "case_id": "banking77:test:586",
+      "input": "what is the charges for new card?",
+      "reference_intent": "contactless_not_working",
+      "outputs_match": false,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"order_physical_card\"}",
+        "parsed_intent": "order_physical_card",
+        "correct": false,
+        "provider_route": "openai",
+        "receipt_sha256": "c79857a77ae76513646f34c2de54fce6c1d7832152d2f5504cc921dfceee0df7",
+        "response_sha256": "7945743c24f4d1d00a7e4655b881809863349af6a378cb8a671ac5431357d5a3",
+        "request_sha256": "6a9b57c9ec33c78e03984be6c5a8b048a3446aaf93814affb17f595aaa253657",
+        "plan_sha256": "fa28afcfde818f2234f7d94fc946db34b2d7254acca6a8fc1b9ea7a829a12c33"
+      },
+      "candidate": {
+        "model": "openai/gpt-6-luna",
+        "name": "GPT-6 Luna",
+        "visible_answer": "{\"intent\":\"get_physical_card\"}",
+        "parsed_intent": "get_physical_card",
+        "correct": false,
+        "provider_route": "openai",
+        "receipt_sha256": "940a1a308b370dd7cb7520efc0692fa8b562683a845caf17c1ceecfcca724569",
+        "response_sha256": "17d8f0486e8742b791ed7b882edf20b72f81c095e95425e9631cfb6f973021e9",
+        "request_sha256": "6f5ddd8a1ce300638ccbc5f8136360971467d8e3cc21b6ade111decc66b6908b",
+        "plan_sha256": "d0e53b2ccbc823fb7a960bf5cf31e12c3c95b2cfc7465691725175e81e7e649c"
+      },
+      "provenance": {
+        "plan_sha256": "d0e53b2ccbc823fb7a960bf5cf31e12c3c95b2cfc7465691725175e81e7e649c",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "gpt-sol:both_correct:banking77:test:2",
+      "category": "both_correct",
+      "candidate_arm_id": "gpt-sol",
+      "case_id": "banking77:test:2",
+      "input": "I ordered a card but it has not arrived. Help please!",
+      "reference_intent": "card_arrival",
+      "outputs_match": true,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"card_arrival\"}",
+        "parsed_intent": "card_arrival",
+        "correct": true,
+        "provider_route": "openai",
+        "receipt_sha256": "590264eb8918169dad4ea57bb612c421d889ccee094bd11331c241b77190e028",
+        "response_sha256": "c2d7abc7f7c7fb3abd1916ad347115c044c4fd23a29732ef7e2c6d2c05163da2",
+        "request_sha256": "fac7bb7a024b32009fa2cf5b5274b2815ff84cbe984ea43827cc24299046989b",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "candidate": {
+        "model": "openai/gpt-6.1-sol",
+        "name": "GPT-6.1 Sol",
+        "visible_answer": "{\"intent\":\"card_arrival\"}",
+        "parsed_intent": "card_arrival",
+        "correct": true,
+        "provider_route": "openai",
+        "receipt_sha256": "b761007b3dc11d096134ed0a7e37c1b7ec00d4c388724210f1fe9344281ef9e4",
+        "response_sha256": "76cb5a5c944754bfc5c2a06e8755b3addf81cb19f8e31de8059d18b57fbdb653",
+        "request_sha256": "7c0392b8e20c29846be6eb2aefa06b738faac0ff4029665e3983ee65a2452123",
+        "plan_sha256": "e1cbd00495afb9c5aa74e2b024c39d0034eb1c70130dbdc55109b1d79661075b"
+      },
+      "provenance": {
+        "plan_sha256": "e1cbd00495afb9c5aa74e2b024c39d0034eb1c70130dbdc55109b1d79661075b",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "gpt-sol:shared_wrong:banking77:test:121",
+      "category": "shared_wrong",
+      "candidate_arm_id": "gpt-sol",
+      "case_id": "banking77:test:121",
+      "input": "I made a currency exchange and think I was charged more than I should of been.",
+      "reference_intent": "card_payment_wrong_exchange_rate",
+      "outputs_match": true,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"exchange_charge\"}",
+        "parsed_intent": "exchange_charge",
+        "correct": false,
+        "provider_route": "openai",
+        "receipt_sha256": "96df5f011f7f5b627f6390cea52a6770ff51c2d840821bddac0429cf2c9a22dd",
+        "response_sha256": "4a7c922ca1b8df8c51579c4b072e50f0e75398a93bbb692b5c4c088fbde7b1da",
+        "request_sha256": "b68aa904f86e9278a5aaee57f536fcb79af44fb583194271d106ca8d739486b3",
+        "plan_sha256": "fc86a515c397671c38d6ed40083938075dcc30df692c771de7b660f66a25d193"
+      },
+      "candidate": {
+        "model": "openai/gpt-6.1-sol",
+        "name": "GPT-6.1 Sol",
+        "visible_answer": "{\"intent\":\"exchange_charge\"}",
+        "parsed_intent": "exchange_charge",
+        "correct": false,
+        "provider_route": "openai",
+        "receipt_sha256": "fa921ad5a4ee213ce46a682d28b01960085e4df503ed37b3e9df599439c26249",
+        "response_sha256": "16a3534da16f286881db12693fe9855ccf3390d6ec8a6665206cdcb6b5779113",
+        "request_sha256": "32a03ba514b13535f3c161ca77d5f020df729477d94f63ccaa766bb309b664d5",
+        "plan_sha256": "e1cbd00495afb9c5aa74e2b024c39d0034eb1c70130dbdc55109b1d79661075b"
+      },
+      "provenance": {
+        "plan_sha256": "e1cbd00495afb9c5aa74e2b024c39d0034eb1c70130dbdc55109b1d79661075b",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "gpt-sol:correction:banking77:test:21",
+      "category": "correction",
+      "candidate_arm_id": "gpt-sol",
+      "case_id": "banking77:test:21",
+      "input": "Status of the card I ordered.",
+      "reference_intent": "card_arrival",
+      "outputs_match": false,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"card_delivery_estimate\"}",
+        "parsed_intent": "card_delivery_estimate",
+        "correct": false,
+        "provider_route": "openai",
+        "receipt_sha256": "45294616436f78c8eaa173097c819f86e59b4e4d00135bb4a1f7f467bffa9ee8",
+        "response_sha256": "537c01acb4a20773ed1093a9629bb5b146017b51d49691732ae33b4f3d2b46d2",
+        "request_sha256": "c3714dedcedd12e484da6029d079b39ccf4d28d907e6e836e61063a186465028",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "candidate": {
+        "model": "openai/gpt-6.1-sol",
+        "name": "GPT-6.1 Sol",
+        "visible_answer": "{\"intent\":\"card_arrival\"}",
+        "parsed_intent": "card_arrival",
+        "correct": true,
+        "provider_route": "openai",
+        "receipt_sha256": "9f4ca033792cfa5f3fe72a8efea0b7f114970a63c285737081b56635ac24d9f7",
+        "response_sha256": "95475700c85eff5a29ef0dc454ea3a2a30bbba088cfdd3263d85b6f82973559c",
+        "request_sha256": "d93ebb0f4a7612dc2f3e78bc1c0bc4c0f9c66bc29eb7f101b851f4f39ae1213b",
+        "plan_sha256": "e1cbd00495afb9c5aa74e2b024c39d0034eb1c70130dbdc55109b1d79661075b"
+      },
+      "provenance": {
+        "plan_sha256": "e1cbd00495afb9c5aa74e2b024c39d0034eb1c70130dbdc55109b1d79661075b",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "gpt-sol:regression:banking77:test:696",
+      "category": "regression",
+      "candidate_arm_id": "gpt-sol",
+      "case_id": "banking77:test:696",
+      "input": "I want to reverse my transaction from earlier",
+      "reference_intent": "cancel_transfer",
+      "outputs_match": false,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"cancel_transfer\"}",
+        "parsed_intent": "cancel_transfer",
+        "correct": true,
+        "provider_route": "openai",
+        "receipt_sha256": "4d3c2a04a0a8e1f5cf745d6310f291c1395d5fa3f6c42ec415c38e1956d0b2d9",
+        "response_sha256": "046dc6cb939b32491d7a10815dec6a4dc69215d721607f9a51895a359654de65",
+        "request_sha256": "0fc2a12bfcb1390cef14afd99350f084db0ba1e9b4eb78afbf9ecc9314993b5a",
+        "plan_sha256": "fa28afcfde818f2234f7d94fc946db34b2d7254acca6a8fc1b9ea7a829a12c33"
+      },
+      "candidate": {
+        "model": "openai/gpt-6.1-sol",
+        "name": "GPT-6.1 Sol",
+        "visible_answer": "{\"intent\":\"request_refund\"}",
+        "parsed_intent": "request_refund",
+        "correct": false,
+        "provider_route": "openai",
+        "receipt_sha256": "6fea75f4481d1ea06a1a3d4c456ed91a0c77a9e90c63549b20fc72116569db73",
+        "response_sha256": "90ce57a54731755f752e05df7a186af7d72d9cf279035f587114465ad0d24f87",
+        "request_sha256": "6ea903a15a08a4c07512d59d7eb2570da7d0e86aee796939f8655ed21c4c9ea5",
+        "plan_sha256": "d0e53b2ccbc823fb7a960bf5cf31e12c3c95b2cfc7465691725175e81e7e649c"
+      },
+      "provenance": {
+        "plan_sha256": "d0e53b2ccbc823fb7a960bf5cf31e12c3c95b2cfc7465691725175e81e7e649c",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "gpt-sol:different_wrong:banking77:test:416",
+      "category": "different_wrong",
+      "candidate_arm_id": "gpt-sol",
+      "case_id": "banking77:test:416",
+      "input": "How would I use my money in a different country?",
+      "reference_intent": "exchange_via_app",
+      "outputs_match": false,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"country_support\"}",
+        "parsed_intent": "country_support",
+        "correct": false,
+        "provider_route": "openai",
+        "receipt_sha256": "6f91aaff5c61d975ccaa0c6571df3ee78a3414fd6a6bcf6ed7c9e8215aaee428",
+        "response_sha256": "9a8284aa0e3a1fe588a74a46a840923bce158d638ee9a4474fed6ec1c6f7d37d",
+        "request_sha256": "04a0b49576ef174d3383ead16fbb96d36b04fddda346077c4e8a00d1fd4773c6",
+        "plan_sha256": "fa28afcfde818f2234f7d94fc946db34b2d7254acca6a8fc1b9ea7a829a12c33"
+      },
+      "candidate": {
+        "model": "openai/gpt-6.1-sol",
+        "name": "GPT-6.1 Sol",
+        "visible_answer": "{\"intent\":\"card_acceptance\"}",
+        "parsed_intent": "card_acceptance",
+        "correct": false,
+        "provider_route": "openai",
+        "receipt_sha256": "e56602c51e1d79fad6b004130258e3ab0b51418e21d6d0247027d92336fbfbf9",
+        "response_sha256": "fd389a250f6900cb7e774e6ff1f6ea25a11384e3c2fd4afd957247c3c3e78b5a",
+        "request_sha256": "5af191e1fed9c31a9eb8004c43ba3e3fb23966307b1e643ab14df5e7ee6659d1",
+        "plan_sha256": "d0e53b2ccbc823fb7a960bf5cf31e12c3c95b2cfc7465691725175e81e7e649c"
+      },
+      "provenance": {
+        "plan_sha256": "d0e53b2ccbc823fb7a960bf5cf31e12c3c95b2cfc7465691725175e81e7e649c",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "claude-haiku:both_correct:banking77:test:2",
+      "category": "both_correct",
+      "candidate_arm_id": "claude-haiku",
+      "case_id": "banking77:test:2",
+      "input": "I ordered a card but it has not arrived. Help please!",
+      "reference_intent": "card_arrival",
+      "outputs_match": true,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"card_arrival\"}",
+        "parsed_intent": "card_arrival",
+        "correct": true,
+        "provider_route": "openai",
+        "receipt_sha256": "590264eb8918169dad4ea57bb612c421d889ccee094bd11331c241b77190e028",
+        "response_sha256": "c2d7abc7f7c7fb3abd1916ad347115c044c4fd23a29732ef7e2c6d2c05163da2",
+        "request_sha256": "fac7bb7a024b32009fa2cf5b5274b2815ff84cbe984ea43827cc24299046989b",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "candidate": {
+        "model": "anthropic/claude-haiku-5.5",
+        "name": "Claude Haiku 5.5",
+        "visible_answer": "{\"intent\":\"card_arrival\"}",
+        "parsed_intent": "card_arrival",
+        "correct": true,
+        "provider_route": "anthropic",
+        "receipt_sha256": "fc60ee3f0b8f6fd8514cea86c194772cbf4a750f5f9ceec4b7c994f64b46a279",
+        "response_sha256": "91b6ea8ca1cb66f9c6af15aa96dfc201e6a72433af8914a49ee02eb102d598ad",
+        "request_sha256": "67b10277f0c58d8e36ceead8fcf3af359c6801cd413632eac3a72314484f6143",
+        "plan_sha256": "e1cbd00495afb9c5aa74e2b024c39d0034eb1c70130dbdc55109b1d79661075b"
+      },
+      "provenance": {
+        "plan_sha256": "e1cbd00495afb9c5aa74e2b024c39d0034eb1c70130dbdc55109b1d79661075b",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "claude-haiku:shared_wrong:banking77:test:27",
+      "category": "shared_wrong",
+      "candidate_arm_id": "claude-haiku",
+      "case_id": "banking77:test:27",
+      "input": "I'm still waiting for delivery of my new card, why is it taking so long?",
+      "reference_intent": "card_arrival",
+      "outputs_match": true,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"card_delivery_estimate\"}",
+        "parsed_intent": "card_delivery_estimate",
+        "correct": false,
+        "provider_route": "openai",
+        "receipt_sha256": "83b44b057e9c54add2464329895b98e1bfc98bd1a0e9c858a7ea274a564ce15a",
+        "response_sha256": "4ff29adcfd8cbe92e01c0cca4b08d98199bd8c03d030df8f588f1c1c72346e01",
+        "request_sha256": "e7514903005193b31092d9facf73f27835faa3b94290ee76f3ea9fb80ed34bce",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "candidate": {
+        "model": "anthropic/claude-haiku-5.5",
+        "name": "Claude Haiku 5.5",
+        "visible_answer": "{\"intent\":\"card_delivery_estimate\"}",
+        "parsed_intent": "card_delivery_estimate",
+        "correct": false,
+        "provider_route": "anthropic",
+        "receipt_sha256": "4d6cd264ec380a5d30c3ad33efe77edb98822d279b36eadcd4bef972aa8f687a",
+        "response_sha256": "53829714ac5b16cac4dd8435317049d2ffb8b3dd08f526433d7e09e70f6a0fa4",
+        "request_sha256": "a1ee3c6994bc264923e11c165ed962fc5b0aff79539a185e28a21949208f7bf7",
+        "plan_sha256": "d0e53b2ccbc823fb7a960bf5cf31e12c3c95b2cfc7465691725175e81e7e649c"
+      },
+      "provenance": {
+        "plan_sha256": "d0e53b2ccbc823fb7a960bf5cf31e12c3c95b2cfc7465691725175e81e7e649c",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "claude-haiku:correction:banking77:test:21",
+      "category": "correction",
+      "candidate_arm_id": "claude-haiku",
+      "case_id": "banking77:test:21",
+      "input": "Status of the card I ordered.",
+      "reference_intent": "card_arrival",
+      "outputs_match": false,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"card_delivery_estimate\"}",
+        "parsed_intent": "card_delivery_estimate",
+        "correct": false,
+        "provider_route": "openai",
+        "receipt_sha256": "45294616436f78c8eaa173097c819f86e59b4e4d00135bb4a1f7f467bffa9ee8",
+        "response_sha256": "537c01acb4a20773ed1093a9629bb5b146017b51d49691732ae33b4f3d2b46d2",
+        "request_sha256": "c3714dedcedd12e484da6029d079b39ccf4d28d907e6e836e61063a186465028",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "candidate": {
+        "model": "anthropic/claude-haiku-5.5",
+        "name": "Claude Haiku 5.5",
+        "visible_answer": "{\"intent\":\"card_arrival\"}",
+        "parsed_intent": "card_arrival",
+        "correct": true,
+        "provider_route": "anthropic",
+        "receipt_sha256": "942367f7c8e0d62fa036a0fa787e768b98714e2b9aa781c920d071d9c39e5e87",
+        "response_sha256": "7b17edcfba11adf93c1039dde912167a87cb5e4dad347941d58309f1eaa42266",
+        "request_sha256": "4f158639595c1e4eb13fb8f69c38d5142ddd0e1139b381bf26365f1a6bef304f",
+        "plan_sha256": "e1cbd00495afb9c5aa74e2b024c39d0034eb1c70130dbdc55109b1d79661075b"
+      },
+      "provenance": {
+        "plan_sha256": "e1cbd00495afb9c5aa74e2b024c39d0034eb1c70130dbdc55109b1d79661075b",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "claude-haiku:regression:banking77:test:543",
+      "category": "regression",
+      "candidate_arm_id": "claude-haiku",
+      "case_id": "banking77:test:543",
+      "input": "Why did I get blocked?",
+      "reference_intent": "pin_blocked",
+      "outputs_match": false,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"pin_blocked\"}",
+        "parsed_intent": "pin_blocked",
+        "correct": true,
+        "provider_route": "openai",
+        "receipt_sha256": "8d0b4bc5bcbd9ca4f60d49b79f4abbd6bdb48ef2205a751ea478ca906023f3c1",
+        "response_sha256": "611b2ad952b26b271dacdb065b118c764e8c167ac14239b5f3a9d9999897ffc2",
+        "request_sha256": "1521bc44a0da11dcae5d5758d255383c6d7b3690019728e779ee6eec2d327582",
+        "plan_sha256": "fa28afcfde818f2234f7d94fc946db34b2d7254acca6a8fc1b9ea7a829a12c33"
+      },
+      "candidate": {
+        "model": "anthropic/claude-haiku-5.5",
+        "name": "Claude Haiku 5.5",
+        "visible_answer": "{\"intent\":\"card_not_working\"}",
+        "parsed_intent": "card_not_working",
+        "correct": false,
+        "provider_route": "anthropic",
+        "receipt_sha256": "fb0153ced320919ab623a2cdbaaaf0ad241c0818edf75cf47a558c0ad54ddda7",
+        "response_sha256": "cf6b4fcf314e538f6aad269e590f7db5a9e55cb255116b664e27ec9edec63367",
+        "request_sha256": "1bff81cfdf9810c11532206ee8328cc1e28f7305445838e5b190bcba0b101a99",
+        "plan_sha256": "d0e53b2ccbc823fb7a960bf5cf31e12c3c95b2cfc7465691725175e81e7e649c"
+      },
+      "provenance": {
+        "plan_sha256": "d0e53b2ccbc823fb7a960bf5cf31e12c3c95b2cfc7465691725175e81e7e649c",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "claude-haiku:different_wrong:banking77:test:586",
+      "category": "different_wrong",
+      "candidate_arm_id": "claude-haiku",
+      "case_id": "banking77:test:586",
+      "input": "what is the charges for new card?",
+      "reference_intent": "contactless_not_working",
+      "outputs_match": false,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"order_physical_card\"}",
+        "parsed_intent": "order_physical_card",
+        "correct": false,
+        "provider_route": "openai",
+        "receipt_sha256": "c79857a77ae76513646f34c2de54fce6c1d7832152d2f5504cc921dfceee0df7",
+        "response_sha256": "7945743c24f4d1d00a7e4655b881809863349af6a378cb8a671ac5431357d5a3",
+        "request_sha256": "6a9b57c9ec33c78e03984be6c5a8b048a3446aaf93814affb17f595aaa253657",
+        "plan_sha256": "fa28afcfde818f2234f7d94fc946db34b2d7254acca6a8fc1b9ea7a829a12c33"
+      },
+      "candidate": {
+        "model": "anthropic/claude-haiku-5.5",
+        "name": "Claude Haiku 5.5",
+        "visible_answer": "{\"intent\":\"card_payment_fee_charged\"}",
+        "parsed_intent": "card_payment_fee_charged",
+        "correct": false,
+        "provider_route": "anthropic",
+        "receipt_sha256": "9223d201e96cfaf1bd1c6de5c7c4aeabee14f9b00d108484a2d526db55924d1a",
+        "response_sha256": "5635672057767b96a413e0ac6b977dbe38c668cb92f99da34ee39ed4b82327eb",
+        "request_sha256": "4ce5c3760586a43e276e01257a7815c1cac0b7cf6fafa16bf65b87ad657c582f",
+        "plan_sha256": "d0e53b2ccbc823fb7a960bf5cf31e12c3c95b2cfc7465691725175e81e7e649c"
+      },
+      "provenance": {
+        "plan_sha256": "d0e53b2ccbc823fb7a960bf5cf31e12c3c95b2cfc7465691725175e81e7e649c",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "claude-sonnet:both_correct:banking77:test:2",
+      "category": "both_correct",
+      "candidate_arm_id": "claude-sonnet",
+      "case_id": "banking77:test:2",
+      "input": "I ordered a card but it has not arrived. Help please!",
+      "reference_intent": "card_arrival",
+      "outputs_match": true,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"card_arrival\"}",
+        "parsed_intent": "card_arrival",
+        "correct": true,
+        "provider_route": "openai",
+        "receipt_sha256": "590264eb8918169dad4ea57bb612c421d889ccee094bd11331c241b77190e028",
+        "response_sha256": "c2d7abc7f7c7fb3abd1916ad347115c044c4fd23a29732ef7e2c6d2c05163da2",
+        "request_sha256": "fac7bb7a024b32009fa2cf5b5274b2815ff84cbe984ea43827cc24299046989b",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "candidate": {
+        "model": "anthropic/claude-sonnet-5.5",
+        "name": "Claude Sonnet 5.5",
+        "visible_answer": "{\"intent\":\"card_arrival\"}",
+        "parsed_intent": "card_arrival",
+        "correct": true,
+        "provider_route": "anthropic",
+        "receipt_sha256": "a2e96a3c7fbed754937b61f506540c8f481d27f67e16f5a6a03a329f720d66fe",
+        "response_sha256": "31013269965893e5b1c3ec096f8080a6c78147aea4b10a606b9fef38ca2bd2eb",
+        "request_sha256": "e15d8a6df5cba03b25333ee781cc07e2b2fac1e9ff493d6ccc5957cc56976f2e",
+        "plan_sha256": "e1cbd00495afb9c5aa74e2b024c39d0034eb1c70130dbdc55109b1d79661075b"
+      },
+      "provenance": {
+        "plan_sha256": "e1cbd00495afb9c5aa74e2b024c39d0034eb1c70130dbdc55109b1d79661075b",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "claude-sonnet:shared_wrong:banking77:test:121",
+      "category": "shared_wrong",
+      "candidate_arm_id": "claude-sonnet",
+      "case_id": "banking77:test:121",
+      "input": "I made a currency exchange and think I was charged more than I should of been.",
+      "reference_intent": "card_payment_wrong_exchange_rate",
+      "outputs_match": true,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"exchange_charge\"}",
+        "parsed_intent": "exchange_charge",
+        "correct": false,
+        "provider_route": "openai",
+        "receipt_sha256": "96df5f011f7f5b627f6390cea52a6770ff51c2d840821bddac0429cf2c9a22dd",
+        "response_sha256": "4a7c922ca1b8df8c51579c4b072e50f0e75398a93bbb692b5c4c088fbde7b1da",
+        "request_sha256": "b68aa904f86e9278a5aaee57f536fcb79af44fb583194271d106ca8d739486b3",
+        "plan_sha256": "fc86a515c397671c38d6ed40083938075dcc30df692c771de7b660f66a25d193"
+      },
+      "candidate": {
+        "model": "anthropic/claude-sonnet-5.5",
+        "name": "Claude Sonnet 5.5",
+        "visible_answer": "{\"intent\":\"exchange_charge\"}",
+        "parsed_intent": "exchange_charge",
+        "correct": false,
+        "provider_route": "anthropic",
+        "receipt_sha256": "b923c44e11a25d3b9f75cf2597cfbb2467bac10ac64c6e2cd21ec35301570bb6",
+        "response_sha256": "e697c14c9acf3f3c982e5fa92d43c12f2017a4c3a618aa1a6e6c343069b372b3",
+        "request_sha256": "48a2be204180b86d4cff08c2dcb81e4613a9062e8c7b90d826812ef9b13a93ab",
+        "plan_sha256": "e1cbd00495afb9c5aa74e2b024c39d0034eb1c70130dbdc55109b1d79661075b"
+      },
+      "provenance": {
+        "plan_sha256": "e1cbd00495afb9c5aa74e2b024c39d0034eb1c70130dbdc55109b1d79661075b",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "claude-sonnet:correction:banking77:test:21",
+      "category": "correction",
+      "candidate_arm_id": "claude-sonnet",
+      "case_id": "banking77:test:21",
+      "input": "Status of the card I ordered.",
+      "reference_intent": "card_arrival",
+      "outputs_match": false,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"card_delivery_estimate\"}",
+        "parsed_intent": "card_delivery_estimate",
+        "correct": false,
+        "provider_route": "openai",
+        "receipt_sha256": "45294616436f78c8eaa173097c819f86e59b4e4d00135bb4a1f7f467bffa9ee8",
+        "response_sha256": "537c01acb4a20773ed1093a9629bb5b146017b51d49691732ae33b4f3d2b46d2",
+        "request_sha256": "c3714dedcedd12e484da6029d079b39ccf4d28d907e6e836e61063a186465028",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "candidate": {
+        "model": "anthropic/claude-sonnet-5.5",
+        "name": "Claude Sonnet 5.5",
+        "visible_answer": "{\"intent\":\"card_arrival\"}",
+        "parsed_intent": "card_arrival",
+        "correct": true,
+        "provider_route": "anthropic",
+        "receipt_sha256": "c6341afc1ec8f8cb5eb3bb3f6c00152a578a0dffa7785c9f82b75845c2ca3578",
+        "response_sha256": "8c582fae07d659d68f9adb74ff7f6fdd78f7f43e732bee8f8c004effb2d9b58b",
+        "request_sha256": "931eb8917e657c4d054571739ae889b48621f5def301b017886b112451d2485c",
+        "plan_sha256": "e1cbd00495afb9c5aa74e2b024c39d0034eb1c70130dbdc55109b1d79661075b"
+      },
+      "provenance": {
+        "plan_sha256": "e1cbd00495afb9c5aa74e2b024c39d0034eb1c70130dbdc55109b1d79661075b",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "claude-sonnet:regression:banking77:test:406",
+      "category": "regression",
+      "candidate_arm_id": "claude-sonnet",
+      "case_id": "banking77:test:406",
+      "input": "How are currencies exchanged?",
+      "reference_intent": "exchange_via_app",
+      "outputs_match": false,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"exchange_via_app\"}",
+        "parsed_intent": "exchange_via_app",
+        "correct": true,
+        "provider_route": "openai",
+        "receipt_sha256": "ebe328c7bc1057cc775b5643f2a62a96c35ac317ecbe8093b24384477e205d94",
+        "response_sha256": "9ac07a3318c06426ad49d0b47a8015ccb78f7e7522599bda9e6235a489a92d02",
+        "request_sha256": "bc878ddd0c054245bb4fe13f80efc673959b32d8b200599c447a233e0dd6a20a",
+        "plan_sha256": "fa28afcfde818f2234f7d94fc946db34b2d7254acca6a8fc1b9ea7a829a12c33"
+      },
+      "candidate": {
+        "model": "anthropic/claude-sonnet-5.5",
+        "name": "Claude Sonnet 5.5",
+        "visible_answer": "{\"intent\":\"exchange_rate\"}",
+        "parsed_intent": "exchange_rate",
+        "correct": false,
+        "provider_route": "anthropic",
+        "receipt_sha256": "07d6dc9a26d1f2a82cc930de37244741b3e617934edeafe8293aa76f29c71db4",
+        "response_sha256": "bd650d3ac15ce05ff20cf272b32ab94a372a4756a2c18388a5c5b0e635821daa",
+        "request_sha256": "bd4c9f051bfc7f49f6a4ae185f651dba55061b130c3790abed1da0b70cb9e2e3",
+        "plan_sha256": "d0e53b2ccbc823fb7a960bf5cf31e12c3c95b2cfc7465691725175e81e7e649c"
+      },
+      "provenance": {
+        "plan_sha256": "d0e53b2ccbc823fb7a960bf5cf31e12c3c95b2cfc7465691725175e81e7e649c",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "claude-sonnet:different_wrong:banking77:test:1329",
+      "category": "different_wrong",
+      "candidate_arm_id": "claude-sonnet",
+      "case_id": "banking77:test:1329",
+      "input": "How do my friends top up my account",
+      "reference_intent": "topping_up_by_card",
+      "outputs_match": false,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"transfer_into_account\"}",
+        "parsed_intent": "transfer_into_account",
+        "correct": false,
+        "provider_route": "openai",
+        "receipt_sha256": "0803c197841569d58be217c3ba2053b2c920b50eda3bbb8db2c98a15119e0f25",
+        "response_sha256": "0404950add231126550b6c8b48ba15ecdc108f954559ce403b916a24414ef4d7",
+        "request_sha256": "6606239c33e9edbd00010d467a13183cd20501a95b6b33a8f107dd5755f73ba9",
+        "plan_sha256": "fa28afcfde818f2234f7d94fc946db34b2d7254acca6a8fc1b9ea7a829a12c33"
+      },
+      "candidate": {
+        "model": "anthropic/claude-sonnet-5.5",
+        "name": "Claude Sonnet 5.5",
+        "visible_answer": "{\"intent\":\"receiving_money\"}",
+        "parsed_intent": "receiving_money",
+        "correct": false,
+        "provider_route": "anthropic",
+        "receipt_sha256": "a8de945cb2ee56ce073be66f4dd544b5d25a5bf961adbfd0d261790286244007",
+        "response_sha256": "6742d6a71dac45ed15fe6553646d397f36572e943177c9cc357ccbd3cffaf1a1",
+        "request_sha256": "3ada6be7ad3767a6aa6829c865936d4a6aa61cb42bbd3791de028558945a2ac7",
+        "plan_sha256": "d0e53b2ccbc823fb7a960bf5cf31e12c3c95b2cfc7465691725175e81e7e649c"
+      },
+      "provenance": {
+        "plan_sha256": "d0e53b2ccbc823fb7a960bf5cf31e12c3c95b2cfc7465691725175e81e7e649c",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "grok:both_correct:banking77:test:2",
+      "category": "both_correct",
+      "candidate_arm_id": "grok",
+      "case_id": "banking77:test:2",
+      "input": "I ordered a card but it has not arrived. Help please!",
+      "reference_intent": "card_arrival",
+      "outputs_match": true,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"card_arrival\"}",
+        "parsed_intent": "card_arrival",
+        "correct": true,
+        "provider_route": "openai",
+        "receipt_sha256": "590264eb8918169dad4ea57bb612c421d889ccee094bd11331c241b77190e028",
+        "response_sha256": "c2d7abc7f7c7fb3abd1916ad347115c044c4fd23a29732ef7e2c6d2c05163da2",
+        "request_sha256": "fac7bb7a024b32009fa2cf5b5274b2815ff84cbe984ea43827cc24299046989b",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "candidate": {
+        "model": "x-ai/grok-4.7",
+        "name": "Grok 4.7",
+        "visible_answer": "{\"intent\":\"card_arrival\"}",
+        "parsed_intent": "card_arrival",
+        "correct": true,
+        "provider_route": "xai",
+        "receipt_sha256": "55d864dbe19c5c2088467d30c5ccc4890823821f0bb7f8e213c96aa676b8b161",
+        "response_sha256": "322c98cbddba162f0e7294c893e834bb42d1e24c862cb011936234f38f1c8e9d",
+        "request_sha256": "0b0c254fcc33d57a5ab238abc985b8db9d7f7ceba28517cadabde0cc5164bf39",
+        "plan_sha256": "e1cbd00495afb9c5aa74e2b024c39d0034eb1c70130dbdc55109b1d79661075b"
+      },
+      "provenance": {
+        "plan_sha256": "e1cbd00495afb9c5aa74e2b024c39d0034eb1c70130dbdc55109b1d79661075b",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "grok:shared_wrong:banking77:test:27",
+      "category": "shared_wrong",
+      "candidate_arm_id": "grok",
+      "case_id": "banking77:test:27",
+      "input": "I'm still waiting for delivery of my new card, why is it taking so long?",
+      "reference_intent": "card_arrival",
+      "outputs_match": true,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"card_delivery_estimate\"}",
+        "parsed_intent": "card_delivery_estimate",
+        "correct": false,
+        "provider_route": "openai",
+        "receipt_sha256": "83b44b057e9c54add2464329895b98e1bfc98bd1a0e9c858a7ea274a564ce15a",
+        "response_sha256": "4ff29adcfd8cbe92e01c0cca4b08d98199bd8c03d030df8f588f1c1c72346e01",
+        "request_sha256": "e7514903005193b31092d9facf73f27835faa3b94290ee76f3ea9fb80ed34bce",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "candidate": {
+        "model": "x-ai/grok-4.7",
+        "name": "Grok 4.7",
+        "visible_answer": "{\"intent\":\"card_delivery_estimate\"}",
+        "parsed_intent": "card_delivery_estimate",
+        "correct": false,
+        "provider_route": "xai",
+        "receipt_sha256": "654ec53aa34ee81ce0d4bea68dd14440a5e4604a7a9a2299847e16f3bd7acaff",
+        "response_sha256": "f3236fa850dec73278175a8097913d6e60a6fd4597cfbe76efb97e38eb92596e",
+        "request_sha256": "2c6475745ed38d09d32afc96642f9a7b79ebd9b4cbe4f7e5a88b8e2143c5dd19",
+        "plan_sha256": "d0e53b2ccbc823fb7a960bf5cf31e12c3c95b2cfc7465691725175e81e7e649c"
+      },
+      "provenance": {
+        "plan_sha256": "d0e53b2ccbc823fb7a960bf5cf31e12c3c95b2cfc7465691725175e81e7e649c",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "grok:correction:banking77:test:21",
+      "category": "correction",
+      "candidate_arm_id": "grok",
+      "case_id": "banking77:test:21",
+      "input": "Status of the card I ordered.",
+      "reference_intent": "card_arrival",
+      "outputs_match": false,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"card_delivery_estimate\"}",
+        "parsed_intent": "card_delivery_estimate",
+        "correct": false,
+        "provider_route": "openai",
+        "receipt_sha256": "45294616436f78c8eaa173097c819f86e59b4e4d00135bb4a1f7f467bffa9ee8",
+        "response_sha256": "537c01acb4a20773ed1093a9629bb5b146017b51d49691732ae33b4f3d2b46d2",
+        "request_sha256": "c3714dedcedd12e484da6029d079b39ccf4d28d907e6e836e61063a186465028",
+        "plan_sha256": "fe1274037d6c43988e0f1f8035ec130e731a9df694dd1cbe4a46a4d2d98955a1"
+      },
+      "candidate": {
+        "model": "x-ai/grok-4.7",
+        "name": "Grok 4.7",
+        "visible_answer": "{\"intent\":\"card_arrival\"}",
+        "parsed_intent": "card_arrival",
+        "correct": true,
+        "provider_route": "xai",
+        "receipt_sha256": "23ab54058ce6dbeb01c90cad7b546acaee3f003452d0172bea3226ce186e3625",
+        "response_sha256": "6a414f26e6258b0c20808f386c292155fce2e2d3c2bc8cf2d0a3223e18b83f0c",
+        "request_sha256": "d9c98d75fa1bc83c23df659e0734a4c59ebbd04c84ccc8bc93328072037ce8be",
+        "plan_sha256": "e1cbd00495afb9c5aa74e2b024c39d0034eb1c70130dbdc55109b1d79661075b"
+      },
+      "provenance": {
+        "plan_sha256": "e1cbd00495afb9c5aa74e2b024c39d0034eb1c70130dbdc55109b1d79661075b",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "grok:regression:banking77:test:596",
+      "category": "regression",
+      "candidate_arm_id": "grok",
+      "case_id": "banking77:test:596",
+      "input": "How do I enable contactless pay?",
+      "reference_intent": "contactless_not_working",
+      "outputs_match": false,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"contactless_not_working\"}",
+        "parsed_intent": "contactless_not_working",
+        "correct": true,
+        "provider_route": "openai",
+        "receipt_sha256": "df17435dda829d0a976f8aa577c516d9dd65964e40f46e4a2c7d870bd0b98097",
+        "response_sha256": "5e73fa568a47bf1f4bfaf79bf22594f1a28d0106b2fada9cb0b28a74f3870fa8",
+        "request_sha256": "a4d66cd758c58af48c35a8942189583f85359e969a2d2fc808ce19b7cc623868",
+        "plan_sha256": "fa28afcfde818f2234f7d94fc946db34b2d7254acca6a8fc1b9ea7a829a12c33"
+      },
+      "candidate": {
+        "model": "x-ai/grok-4.7",
+        "name": "Grok 4.7",
+        "visible_answer": "{\"intent\":\"apple_pay_or_google_pay\"}",
+        "parsed_intent": "apple_pay_or_google_pay",
+        "correct": false,
+        "provider_route": "xai",
+        "receipt_sha256": "4c2243fa8f21a6deffc39155e2f0e0ce52b23bff38e2e99bf9edf6f8621d8d99",
+        "response_sha256": "b1bee60835cedbb521fc136fa67de585ec262f0c2c52e415038672626980eca5",
+        "request_sha256": "55abbbe228d5b7eb7baf825d1c94dd5b491e86be91f0db8c718aff0baf6fceb6",
+        "plan_sha256": "d0e53b2ccbc823fb7a960bf5cf31e12c3c95b2cfc7465691725175e81e7e649c"
+      },
+      "provenance": {
+        "plan_sha256": "d0e53b2ccbc823fb7a960bf5cf31e12c3c95b2cfc7465691725175e81e7e649c",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    },
+    {
+      "id": "grok:different_wrong:banking77:test:586",
+      "category": "different_wrong",
+      "candidate_arm_id": "grok",
+      "case_id": "banking77:test:586",
+      "input": "what is the charges for new card?",
+      "reference_intent": "contactless_not_working",
+      "outputs_match": false,
+      "incumbent": {
+        "model": "openai/o4-mini",
+        "name": "o4-mini",
+        "visible_answer": "{\"intent\":\"order_physical_card\"}",
+        "parsed_intent": "order_physical_card",
+        "correct": false,
+        "provider_route": "openai",
+        "receipt_sha256": "c79857a77ae76513646f34c2de54fce6c1d7832152d2f5504cc921dfceee0df7",
+        "response_sha256": "7945743c24f4d1d00a7e4655b881809863349af6a378cb8a671ac5431357d5a3",
+        "request_sha256": "6a9b57c9ec33c78e03984be6c5a8b048a3446aaf93814affb17f595aaa253657",
+        "plan_sha256": "fa28afcfde818f2234f7d94fc946db34b2d7254acca6a8fc1b9ea7a829a12c33"
+      },
+      "candidate": {
+        "model": "x-ai/grok-4.7",
+        "name": "Grok 4.7",
+        "visible_answer": "{\"intent\":\"getting_spare_card\"}",
+        "parsed_intent": "getting_spare_card",
+        "correct": false,
+        "provider_route": "xai",
+        "receipt_sha256": "8d7e229294a4d4fcf32fe39777db5ac61e42ad4295cf7cb3286fe17e7d241c60",
+        "response_sha256": "7976ad566a42a69894aa5ea7d48057d9d85f807ac03512da675d9093f8ead662",
+        "request_sha256": "b5bbad4ee15bc0fc290ef245aa4cea3750e5fe2eaf01428e4405389368fabc8a",
+        "plan_sha256": "d0e53b2ccbc823fb7a960bf5cf31e12c3c95b2cfc7465691725175e81e7e649c"
+      },
+      "provenance": {
+        "plan_sha256": "d0e53b2ccbc823fb7a960bf5cf31e12c3c95b2cfc7465691725175e81e7e649c",
+        "dataset_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+      }
+    }
+  ],
+  "source_summaries": [
+    {
+      "role": "retained_history",
+      "sha256": "31d2f1a4ddc87eb9a6682c2c69f51a679d0c51f91bac9279772aa51c3d209b1d"
+    },
+    {
+      "role": "extension",
+      "sha256": "3b41e33295c60f5b80807797c9446aed1ff644c022af72442246dbcb770f91ca"
+    }
+  ]
+}

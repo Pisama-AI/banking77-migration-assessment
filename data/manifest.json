@@ -1,0 +1,80 @@
+{
+  "format": "pisama-banking77-candidate-extension-packet-v2",
+  "renderer": "pisama-banking77-extension-report-v2",
+  "decision_renderer": "pisama-banking77-extension-decision-pdf/2",
+  "appendix_renderer": "pisama-banking77-extension-appendix-pdf/2",
+  "prepared_at": "2026-10-13T19:47:57Z",
+  "publication_identity": {
+    "summary_sha256": "3b41e33295c60f5b80807797c9446aed1ff644c022af72442246dbcb770f91ca",
+    "independent_audit_sha256": "ee9496dae06a559b90191b577fab02107ed411979801b78523d4479175206cdb",
+    "result_sha256": "9629be29651ded2dc859fbbc6efb2ca0dd65e9a79d91831066da94286cb20563",
+    "journal_sha256": "e2e0b650a36824e09db0d4544ad45d7dc8c42149aea7ec89906baf3421e68a1b",
+    "readiness_amendment_sha256": "c2e3f6e758920525a56cc1e22882a2aab8b562bda1e39195d7cc2e9c57e94b19",
+    "prefix_journal_sha256": "9a6a559f8bfe814bacb318498cfc7b81a5c6b6bec80436ef7dfb9feb6743c85d",
+    "rejection_continuation_plan_sha256": "d0e53b2ccbc823fb7a960bf5cf31e12c3c95b2cfc7465691725175e81e7e649c",
+    "stopped_journal_sha256": "a2069c72f60b76f91dd1badf8b46e6900cd2522823e7b3b1fe75766efef65ad8",
+    "stopped_result_sha256": "2a19b2b06747ff660401ac72a54cb257ed4194c6391eb8c36b9ed84db2f2ec20",
+    "rejection_amendment_sha256": "7b9e5e5933782f87c18368a75c52d341e778b5a1ab27ba630a159d4483007014"
+  },
+  "source_files": {
+    "scripts/render-banking77-candidate-extension.ts": "5c7dba4613a7113e616efd43111f65587385dc825218e3cb3def5fb7d6b2eeca",
+    "scripts/summarize-banking77-candidate-extension-v2.ts": "01973270c0044445e8d040ed17731e19b09a818fc93131d902cb7d78e7542a03",
+    "scripts/summarize-banking77-adaptive-comparison.ts": "fa0d38d2105e758b41bc88f2cb829608a97158bdc57597a35d25670bf67ee9be",
+    "scripts/summarize-banking77-matched-correction.ts": "8df9d1f0245fff05e8b4a6285eddd037deb4fdef221ad0bdd05526cf1ce6139e",
+    "scripts/summarize-banking77-comparison.ts": "c83a087779ebe83039b31f7125dada7dacc1c3924ebeccb9b4a12d58081fe99e",
+    "scripts/summarize-banking77-route-followup.ts": "43c0b03a9829fb11d8e742b6bd4bd953ab011eb25e13a36f8a18e97b1492fe6c",
+    "src/lib/banking77-extension-admission-v2.ts": "d5c907c0a385464a532f27d30465af9596f094758efeb334b70137d87f79f508",
+    "src/lib/banking77-extension-presentation.ts": "b37e0ab39b99102c714ec7442143d5a2abed0c593cd62647aafc016e2c0b2c5b",
+    "src/lib/banking77-extension-insights.ts": "a9578f94942138520390754a31a690b042917376721090955a1765acaaf92b40",
+    "src/lib/banking77-extension-pdf.ts": "0ddb69353ea7e723d78d96965e99f5333cfe92c1fa15f4eabb69e2ae97306a15",
+    "src/lib/assessment-report-layout.ts": "62ea0e57248b95519e13b778021646cb7e73d2895f0569a65a689737284451a0",
+    "src/lib/assessment-benchmark-comparison.ts": "09be99414bf39adb12dfbd0a256be2ae7874705d54e47abc485ffea2deb18fa2",
+    "src/lib/benchmark-decision.ts": "44f9234ffadf7892729950d0c18dd8b1b1a7c4c8cb052107176df305da01f5b1",
+    "src/lib/banking77-matched-study-pdf.ts": "f57147e7ab0f580615b2277c3cbb425ea0eb7e9fec501a371c7e0b059eebce08",
+    "src/lib/banking77-amended-study.ts": "2f555f8925de31796e544a08da6fc7d71b3907c3ee903002c43c61e412ec2753",
+    "src/lib/benchmark-answer-coverage.ts": "c1c7444226c526530d0c95eefce78f49b79a0fbd9086186efc531ffb7508501f",
+    "src/lib/model-lifecycle-csv.ts": "14b8aa0f824028d95009d35962fcac9ecbcbb9c37aa62edb5dc45126bdd93874"
+  },
+  "asset_sha256": {
+    "body": "d20b3ba43dc02a2655c22c60b4d70e6d85cd5e8f51912040f8bd77b5737dd35f",
+    "heading": "6a5701c86cf24d4ae68d8841860c69c34a482b7314289a93255ba00d9dabe294",
+    "logo": "17489ba42d8f51947f62484e1cfa159c91fc3d880435a551b77934fcfc9bcf4a"
+  },
+  "models": 12,
+  "cases_per_model": {
+    "primary": 500,
+    "challenge": 30
+  },
+  "pdf_pages": 2,
+  "appendix_pdf_pages": 27,
+  "files": {
+    "banking77-decision-report.pdf": {
+      "sha256": "4beef6ae28a80c60d6877f099565fd72debc7905b9a895c19dc43198da5316f8",
+      "bytes": 247870
+    },
+    "banking77-evidence-appendix.pdf": {
+      "sha256": "2eb3105f97a0b2ccc2ffbf506cfb0354848f9515a5e0ee188dd9eab7fb911011",
+      "bytes": 314123
+    },
+    "comparison.json": {
+      "sha256": "e1803b1212e09e619f220e2ae044f48e15ce0396463850408b033040df6b4734",
+      "bytes": 200285
+    },
+    "comparison.csv": {
+      "sha256": "7705d36124acb804cc3002c9a3ee617fbb4e824014eba838402672eae98cd70e",
+      "bytes": 25356
+    },
+    "case-examples.json": {
+      "sha256": "e6678bf6e9d1e9b0801b37630ecbd8cb948ce20c14b826f2ea0c440785d8d469",
+      "bytes": 105587
+    },
+    "case-examples.csv": {
+      "sha256": "04c5a7c63dae9ae0a567bdce89391e6bc1caf016d5ccc84da75f1c6eb4157c88",
+      "bytes": 24300
+    },
+    "README.md": {
+      "sha256": "9b66b5f1a33edb375a445bdbbf6aa8e493c427d05d1d602603bf30a6cb2f7ce7",
+      "bytes": 1716
+    }
+  }
+}

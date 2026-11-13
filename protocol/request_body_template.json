@@ -1,0 +1,32 @@
+{
+ "max_tokens": 2048,
+ "messages": [
+  {
+   "role": "system",
+   "content": "<protocol/system_prompt.txt>"
+  },
+  {
+   "role": "user",
+   "content": "<Banking77 test text for the case>"
+  }
+ ],
+ "model": "<configuration model>",
+ "provider": {
+  "allow_fallbacks": false,
+  "max_price": {
+   "completion": "2.5000000",
+   "prompt": "0.3000000",
+   "request": "0"
+  },
+  "only": [
+   "google-ai-studio"
+  ],
+  "require_parameters": true
+ },
+ "reasoning": {
+  "effort": "low"
+ },
+ "usage": {
+  "include": true
+ }
+}
